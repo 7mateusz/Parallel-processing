@@ -24,11 +24,11 @@ u64 calculate_ones(bn_uint* num) {
 	return result;
 }
 
-u32 bin_len(u64 num) {
+u64 bin_len(u64 num) {
 	if (num == 0)
 		return 0;
 
-	u32 result = 0;
+	u64 result = 0;
 	for (i32 i = 0; i < 64; i++) {
 		if (num & 1U << i)
 			result = i + 1;
@@ -36,7 +36,7 @@ u32 bin_len(u64 num) {
 	return result;
 }
 
-void print_binary(u32 n, u32 len, const char* text) {
+void print_binary(u64 n, u64 len, const char* text) {
 	char buf[len + 1];
 	memset(buf, '0', len + 1);
 	buf[len] = '\0';
@@ -60,7 +60,7 @@ i32 main(int argc, char* argv[]){
 
 	u64 nbits = strtoul(argv[1], 0, 0);
 
-	u32 nthreads;
+	u64 nthreads;
 	if (argc == 3) {
 		nthreads = strtol(argv[2], 0, 0);
 	}
@@ -75,7 +75,7 @@ i32 main(int argc, char* argv[]){
 
 	omp_set_num_threads((int)nthreads);
 
-	u64 prefix_len = bin_len((u64)nthreads - 1);
+	u64 prefix_len = bin_len(nthreads - 1);
 	u64 shift = nbits - prefix_len;
 	u64 iter = 1UL << shift;
 
