@@ -1,5 +1,5 @@
 NVCC = nvcc
-NVCCFLAGS = -O3 -arch=sm_60
+NVCCFLAGS = -O3 -arch=sm_86 -std=c++17
 TARGET = cuda
 
 all: $(TARGET)
