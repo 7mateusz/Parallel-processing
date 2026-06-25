@@ -162,17 +162,18 @@ void write_config(const char *config_file, long count) {
 }
 
 int main(int argc, char **argv) {
-    int n = 0, k = 0, all_graphs = 0, batch_size = DEFAULT_BATCH_SIZE;
+    int n = 0, k = 0, all_graphs = 0, batch_size = DEFAULT_BATCH_SIZE, block_size_override = 0;
     int i = 1;
 
     if (argc < 3) {
-        printf("%s: n k [-a] [-b batch]\n", argv[0]);
+        printf("%s: n k [-a] [-b batch] [-B blockSize]\n", argv[0]);
         return 1;
     }
 
     for (i = 1; i < argc; i++) {
         if (strcmp(argv[i], "-a") == 0) all_graphs = 1;
         else if (strcmp(argv[i], "-b") == 0 && i + 1 < argc) batch_size = atoi(argv[++i]);
+        else if (strcmp(argv[i], "-B") == 0 && i + 1 < argc) block_size_override = atoi(argv[++i]);
         else if (n == 0) n = atoi(argv[i]);
         else if (k == 0) k = atoi(argv[i]);
     }
@@ -186,6 +187,25 @@ int main(int argc, char **argv) {
         printf("n=%d > NMAX=%d\n", n, NMAX);
         return 1;
     }
+
+    cudaDeviceProp props;
+    cudaGetDeviceProperties(&props, 0);
+    int maxThreadsPerBlock = props.maxThreadsPerBlock;
+
+    int threadsPerBlock;
+    if (block_size_override > 0) {
+        if (block_size_override > maxThreadsPerBlock) {
+            printf("warning: block size %d exceeds max %d, using %d\n",
+                   block_size_override, maxThreadsPerBlock, maxThreadsPerBlock);
+            threadsPerBlock = maxThreadsPerBlock;
+        } else {
+            threadsPerBlock = block_size_override;
+        }
+    } else {
+        threadsPerBlock = maxThreadsPerBlock;
+    }
+    printf("GPU: %s, max threads per block: %d, using: %d\n",
+           props.name, maxThreadsPerBlock, threadsPerBlock);
 
     struct sigaction sa;
     sa.sa_handler = handle_sigint;
@@ -279,7 +299,6 @@ int main(int argc, char **argv) {
         HANDLE_ERROR(cudaMemcpy(d_bufory, h_bufory, graphs * BUFSIZE, cudaMemcpyHostToDevice));
         HANDLE_ERROR(cudaMemset(d_wyniki, 0, graphs * sizeof(int)));
 
-        int threadsPerBlock = 256;
         int blocksPerGrid = (graphs + threadsPerBlock - 1) / threadsPerBlock;
         eigensymmatrix_kernel<<<blocksPerGrid, threadsPerBlock>>>(d_bufory, d_wyniki, graphs);
 
