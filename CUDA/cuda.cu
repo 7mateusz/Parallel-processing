@@ -162,11 +162,11 @@ void write_config(const char *config_file, long count) {
 }
 
 int main(int argc, char **argv) {
-    int n = 0, k = 0, all_graphs = 0, batch_size = DEFAULT_BATCH_SIZE, block_size_override = 0;
+    int n = 0, k = 0, all_graphs = 0, batch_size = DEFAULT_BATCH_SIZE, block_size_override = 0, verbose = 0;
     int i = 1;
 
     if (argc < 3) {
-        printf("%s: n k [-a] [-b batch] [-B blockSize]\n", argv[0]);
+        printf("%s: n k [-a] [-b batch] [-B blockSize] [-d]\n", argv[0]);
         return 1;
     }
 
@@ -174,6 +174,7 @@ int main(int argc, char **argv) {
         if (strcmp(argv[i], "-a") == 0) all_graphs = 1;
         else if (strcmp(argv[i], "-b") == 0 && i + 1 < argc) batch_size = atoi(argv[++i]);
         else if (strcmp(argv[i], "-B") == 0 && i + 1 < argc) block_size_override = atoi(argv[++i]);
+        else if (strcmp(argv[i], "-d") == 0) verbose = 1;
         else if (n == 0) n = atoi(argv[i]);
         else if (k == 0) k = atoi(argv[i]);
     }
@@ -204,7 +205,7 @@ int main(int argc, char **argv) {
     } else {
         threadsPerBlock = maxThreadsPerBlock;
     }
-    printf("GPU: %s, max threads per block: %d, using: %d\n",
+    if (verbose) printf("GPU: %s, max threads per block: %d, using: %d\n",
            props.name, maxThreadsPerBlock, threadsPerBlock);
 
     struct sigaction sa;
@@ -240,7 +241,7 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    printf("searching n=%d, k=%d, %s\n", n, k, all_graphs ? "all" : "connected");
+    if (verbose) printf("searching n=%d, k=%d, %s\n", n, k, all_graphs ? "all" : "connected");
 
     if (batch_size < 1) {
         printf("batch size must be >= 1\n");
@@ -248,7 +249,7 @@ int main(int argc, char **argv) {
     }
 
     if (skip_count > 0)
-        printf("resuming, skipping %ld...\n", skip_count);
+        if (verbose) printf("resuming, skipping %ld...\n", skip_count);
 
     char *h_bufory = (char *)malloc(batch_size * BUFSIZE);
     if (!h_bufory) {
@@ -319,8 +320,10 @@ int main(int argc, char **argv) {
         processed_count += graphs;
         total_found += batch_found;
 
-        printf("\rprocessed: %ld, found: %ld", processed_count, total_found);
-        fflush(stdout);
+        if (verbose) {
+            printf("\rprocessed: %ld, found: %ld", processed_count, total_found);
+            fflush(stdout);
+        }
 
         if (stop_flag) {
             printf("\ninterrupted, saving...\n");
@@ -330,7 +333,7 @@ int main(int argc, char **argv) {
     } while (graphs == batch_size);
 
     if (!stop_flag) {
-        printf("\ndone.\n");
+        if (verbose) printf("\ndone.\n");
         remove(config_file);
     }
 
