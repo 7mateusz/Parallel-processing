@@ -154,41 +154,29 @@ void write_config(const char *config_file, long count) {
     sigprocmask(SIG_SETMASK, &old_mask, NULL);
 }
 
-void print_usage(const char *prog) {
-    fprintf(stderr, "Usage: %s n k [-a] [-b batch_size]\n", prog);
-    fprintf(stderr, "  n k          number of vertices and edges\n");
-    fprintf(stderr, "  -a           all graphs (default: connected only)\n");
-    fprintf(stderr, "  -b N         batch size (default: %d)\n", DEFAULT_BATCH_SIZE);
-}
-
 int main(int argc, char **argv) {
-    int n = 0, k = 0;
-    int all_graphs = 0;
-    int batch_size = DEFAULT_BATCH_SIZE;
+    int n = 0, k = 0, all_graphs = 0, batch_size = DEFAULT_BATCH_SIZE;
+    int i = 1;
 
-    int opt;
-    while ((opt = getopt(argc, argv, "ab:")) != -1) {
-        switch (opt) {
-            case 'a': all_graphs = 1; break;
-            case 'b': batch_size = atoi(optarg); break;
-            default:  print_usage(argv[0]); return 1;
-        }
-    }
-
-    if (optind + 2 != argc) {
-        print_usage(argv[0]);
+    if (argc < 3) {
+        printf("%s: n k [-a] [-b batch]\n", argv[0]);
         return 1;
     }
-    n = atoi(argv[optind]);
-    k = atoi(argv[optind + 1]);
+
+    for (i = 1; i < argc; i++) {
+        if (strcmp(argv[i], "-a") == 0) all_graphs = 1;
+        else if (strcmp(argv[i], "-b") == 0 && i + 1 < argc) batch_size = atoi(argv[++i]);
+        else if (n == 0) n = atoi(argv[i]);
+        else if (k == 0) k = atoi(argv[i]);
+    }
 
     if (n < 1 || k < 0 || k > n * (n - 1) / 2) {
-        fprintf(stderr, "Error: invalid n=%d, k=%d (max edges: %d)\n", n, k, n * (n - 1) / 2);
+        printf("bad n=%d or k=%d (max edges: %d)\n", n, k, n * (n - 1) / 2);
         return 1;
     }
 
     if (n > NMAX) {
-        fprintf(stderr, "Error: n=%d exceeds NMAX=%d\n", n, NMAX);
+        printf("n=%d > NMAX=%d\n", n, NMAX);
         return 1;
     }
 
@@ -214,39 +202,42 @@ int main(int argc, char **argv) {
 
     FILE *fp = popen(cmd, "r");
     if (!fp) {
-        fprintf(stderr, "Error: Could not execute geng. Is it installed?\n");
+        printf("could not run geng\n");
         return 1;
     }
 
     FILE *rf = fopen(result_file, "a");
     if (!rf) {
-        fprintf(stderr, "Error: Could not open %s for writing.\n", result_file);
+        printf("could not open %s\n", result_file);
         pclose(fp);
         return 1;
     }
 
-    printf("Searching integral graphs (n=%d, k=%d, connected=%s)...\n",
-           n, k, all_graphs ? "no" : "yes");
+	printf("searching n=%d, k=%d, %s\n", n, k, all_graphs ? "all" : "connected");
 
     if (batch_size < 1) {
-        fprintf(stderr, "Error: batch size must be positive\n");
+        printf("batch size must be >= 1\n");
         fclose(rf); pclose(fp); return 1;
     }
 
     if (skip_count > 0)
-        printf("Resuming from config: skipping %ld graphs...\n", skip_count);
+        printf("resuming, skipping %ld...\n", skip_count);
 
     char **bufory = malloc(batch_size * sizeof(char *));
-    if (!bufory) {
-        fprintf(stderr, "Error: malloc failed\n");
-        fclose(rf); pclose(fp); return 1;
-    }
+    if (!bufory) { 
+		printf("malloc fail\n"); 
+		fclose(rf);
+		pclose(fp);
+		return 1;
+	}
     for (int i = 0; i < batch_size; i++) {
         bufory[i] = malloc(BUFSIZE);
         if (!bufory[i]) {
-            fprintf(stderr, "Error: malloc failed\n");
-            for (int j = 0; j < i; j++) free(bufory[j]);
-            free(bufory); fclose(rf); pclose(fp); return 1;
+            printf("malloc fail\n");
+            free(bufory); 
+			fclose(rf); 
+			pclose(fp); 
+			return 1;
         }
     }
 
@@ -297,22 +288,22 @@ int main(int argc, char **argv) {
         processed_count += graphs;
         total_found += batch_found;
 
-        printf("\rProcessed: %ld, found: %ld", processed_count, total_found);
+        printf("\rprocessed: %ld, found: %ld", processed_count, total_found);
         fflush(stdout);
 
         if (stop_flag) {
-            printf("\nInterrupted. Saving progress...\n");
+            printf("\ninterrupted, saving...\n");
             write_config(config_file, processed_count);
             break;
         }
     } while (graphs == batch_size);
 
     if (!stop_flag) {
-        printf("\nSearch finished.\n");
+        printf("\ndone.\n");
         remove(config_file);
     }
 
-    printf("Integral graphs found: %ld\n", total_found);
+    printf("found: %ld\n", total_found);
 
     for (int i = 0; i < batch_size; i++)
         free(bufory[i]);
