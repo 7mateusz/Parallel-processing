@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych -->
+<html lang="pl" dir="ltr" class="js desktop"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>pr:generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]</title>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki">
+<meta name="theme-color" content="#008800">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="pr,generowanie_spojnych_grafow_calkowitych">
+<link rel="search" type="application/opensearchdescription+xml" href="https://pw20we.cs.put.poznan.pl/lib/exe/opensearch.php" title="pw20we.cs.put.poznan.pl">
+<link rel="start" href="https://pw20we.cs.put.poznan.pl/">
+<link rel="contents" href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=index" title="Indeks">
+<link rel="manifest" href="https://pw20we.cs.put.poznan.pl/lib/exe/manifest.php">
+<link rel="alternate" type="application/rss+xml" title="Ostatnie zmiany" href="https://pw20we.cs.put.poznan.pl/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Obecny katalog" href="https://pw20we.cs.put.poznan.pl/feed.php?mode=list&amp;ns=pr">
+<link rel="edit" title="Edytuj stronę" href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=edit">
+<link rel="alternate" type="text/html" title="Czysty HTML" href="https://pw20we.cs.put.poznan.pl/doku.php?do=export_xhtml&amp;id=pr:generowanie_spojnych_grafow_calkowitych">
+<link rel="alternate" type="text/plain" title="Znaczniki" href="https://pw20we.cs.put.poznan.pl/doku.php?do=export_raw&amp;id=pr:generowanie_spojnych_grafow_calkowitych">
+<link rel="canonical" href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych">
+<link rel="stylesheet" href="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/css.php">
+<!--[if gte IE 9]><!-->
+<script>/*<![CDATA[*/var NS='pr';var SIG=" --- \/\/[[s160130@student.put.poznan.pl|s160130]] 2026\/09\/19 14:06\/\/";var JSINFO = {"chartlang":"pl","chartlocale":"{\n  \"name\": \"pl\",\n  \"options\": {\n    \"months\": [\n      \"Stycze\u0144\",\n      \"Luty\",\n      \"Marzec\",\n      \"Kwiecie\u0144\",\n      \"Maj\",\n      \"Czerwiec\",\n      \"Lipiec\",\n      \"Sierpie\u0144\",\n      \"Wrzesie\u0144\",\n      \"Pa\u017adziernik\",\n      \"Listopad\",\n      \"Grudzie\u0144\"\n    ],\n    \"shortMonths\": [\n      \"Sty\",\n      \"Lut\",\n      \"Mar\",\n      \"Kwi\",\n      \"Maj\",\n      \"Cze\",\n      \"Lip\",\n      \"Sie\",\n      \"Wrz\",\n      \"Pa\u017a\",\n      \"Lis\",\n      \"Gru\"\n    ],\n    \"days\": [\n      \"Niedziela\",\n      \"Poniedzia\u0142ek\",\n      \"Wtorek\",\n      \"\u015aroda\",\n      \"Czwartek\",\n      \"Pi\u0105tek\",\n      \"Sobota\"\n    ],\n    \"shortDays\": [\"Nd\", \"Pn\", \"Wt\", \"\u015ar\", \"Cz\", \"Pt\", \"Sb\"],\n    \"toolbar\": {\n      \"exportToSVG\": \"Pobierz SVG\",\n      \"exportToPNG\": \"Pobierz PNG\",\n      \"exportToCSV\": \"Pobierz CSV\",\n      \"menu\": \"Menu\",\n      \"selection\": \"Wybieranie\",\n      \"selectionZoom\": \"Zoom: Wybieranie\",\n      \"zoomIn\": \"Zoom: Przybli\u017c\",\n      \"zoomOut\": \"Zoom: Oddal\",\n      \"pan\": \"Przesuwanie\",\n      \"reset\": \"Resetuj\"\n    }\n  }\n}\n","id":"pr:generowanie_spojnych_grafow_calkowitych","namespace":"pr","ACT":"show","useHeadingNavigation":0,"useHeadingContent":0};
+/*!]]>*/</script>
+<script charset="utf-8" src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/jquery.php" defer="defer"></script>
+<script charset="utf-8" src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/js.php" defer="defer"></script>
+<script charset="utf-8" src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/abcjs_plugin-midi_6.0.0-beta.25-min.js"></script>
+<script type="text/x-mathjax-config;executed=true">/*<![CDATA[*/MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+        displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+        processEscapes: true
+    }
+});
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/MathJax.js"></script>
+<!--<![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="https://pw20we.cs.put.poznan.pl/lib/tpl/dokuwiki/images/favicon.ico">
+<link rel="apple-touch-icon" href="https://pw20we.cs.put.poznan.pl/lib/tpl/dokuwiki/images/apple-touch-icon.png">
+    <style type="text/css">.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  /* cannot give overflow: hidden as it will crop tooltips which overflow outside chart area */
+}
+
+
+/* scrollbar is not visible by default for legend, hence forcing the visibility */
+.apexcharts-canvas ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+
+.apexcharts-canvas ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+
+.apexcharts-inner {
+  position: relative;
+}
+
+.apexcharts-text tspan {
+  font-family: inherit;
+}
+
+.legend-mouseover-inactive {
+  transition: 0.15s ease all;
+  opacity: 0.20;
+}
+
+.apexcharts-series-collapsed {
+  opacity: 0;
+}
+
+.apexcharts-tooltip {
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px -4px #999;
+  cursor: default;
+  font-size: 14px;
+  left: 62px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light {
+  border: 1px solid #e3e3e3;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark {
+  color: #fff;
+  background: rgba(30, 30, 30, 0.8);
+}
+
+.apexcharts-tooltip * {
+  font-family: inherit;
+}
+
+
+.apexcharts-tooltip-title {
+  padding: 6px;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+  background: #ECEFF1;
+  border-bottom: 1px solid #ddd;
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #333;
+}
+
+.apexcharts-tooltip-text-y-value,
+.apexcharts-tooltip-text-goals-value,
+.apexcharts-tooltip-text-z-value {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.apexcharts-tooltip-text-y-label:empty,
+.apexcharts-tooltip-text-y-value:empty,
+.apexcharts-tooltip-text-goals-label:empty,
+.apexcharts-tooltip-text-goals-value:empty,
+.apexcharts-tooltip-text-z-value:empty {
+  display: none;
+}
+
+.apexcharts-tooltip-text-y-value,
+.apexcharts-tooltip-text-goals-value,
+.apexcharts-tooltip-text-z-value {
+  font-weight: 600;
+}
+
+.apexcharts-tooltip-text-goals-label, 
+.apexcharts-tooltip-text-goals-value {
+  padding: 6px 0 5px;
+}
+
+.apexcharts-tooltip-goals-group, 
+.apexcharts-tooltip-text-goals-label, 
+.apexcharts-tooltip-text-goals-value {
+  display: flex;
+}
+.apexcharts-tooltip-text-goals-label:not(:empty),
+.apexcharts-tooltip-text-goals-value:not(:empty) {
+  margin-top: -6px;
+}
+
+.apexcharts-tooltip-marker {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.apexcharts-tooltip-series-group {
+  padding: 0 10px;
+  display: none;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active .apexcharts-tooltip-marker {
+  opacity: 1;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active,
+.apexcharts-tooltip-series-group:last-child {
+  padding-bottom: 4px;
+}
+
+.apexcharts-tooltip-series-group-hidden {
+  opacity: 0;
+  height: 0;
+  line-height: 0;
+  padding: 0 !important;
+}
+
+.apexcharts-tooltip-y-group {
+  padding: 6px 0 5px;
+}
+
+.apexcharts-tooltip-box, .apexcharts-custom-tooltip {
+  padding: 4px 8px;
+}
+
+.apexcharts-tooltip-boxPlot {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.apexcharts-tooltip-box>div {
+  margin: 4px 0;
+}
+
+.apexcharts-tooltip-box span.value {
+  font-weight: bold;
+}
+
+.apexcharts-tooltip-rangebar {
+  padding: 5px 8px;
+}
+
+.apexcharts-tooltip-rangebar .category {
+  font-weight: 600;
+  color: #777;
+}
+
+.apexcharts-tooltip-rangebar .series-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.apexcharts-xaxistooltip {
+  opacity: 0;
+  padding: 9px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xaxistooltip.apexcharts-theme-dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-xaxistooltip:after,
+.apexcharts-xaxistooltip:before {
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-xaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.apexcharts-xaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+.apexcharts-xaxistooltip-bottom:after,
+.apexcharts-xaxistooltip-bottom:before {
+  bottom: 100%;
+}
+
+.apexcharts-xaxistooltip-top:after,
+.apexcharts-xaxistooltip-top:before {
+  top: 100%;
+}
+
+.apexcharts-xaxistooltip-bottom:after {
+  border-bottom-color: #ECEFF1;
+}
+
+.apexcharts-xaxistooltip-bottom:before {
+  border-bottom-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:after {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:before {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top:after {
+  border-top-color: #ECEFF1
+}
+
+.apexcharts-xaxistooltip-top:before {
+  border-top-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:after {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-yaxistooltip {
+  opacity: 0;
+  padding: 4px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+}
+
+.apexcharts-yaxistooltip.apexcharts-theme-dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-yaxistooltip:after,
+.apexcharts-yaxistooltip:before {
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-yaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.apexcharts-yaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-top: -7px;
+}
+
+.apexcharts-yaxistooltip-left:after,
+.apexcharts-yaxistooltip-left:before {
+  left: 100%;
+}
+
+.apexcharts-yaxistooltip-right:after,
+.apexcharts-yaxistooltip-right:before {
+  right: 100%;
+}
+
+.apexcharts-yaxistooltip-left:after {
+  border-left-color: #ECEFF1;
+}
+
+.apexcharts-yaxistooltip-left:before {
+  border-left-color: #90A4AE;
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:after {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:before {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right:after {
+  border-right-color: #ECEFF1;
+}
+
+.apexcharts-yaxistooltip-right:before {
+  border-right-color: #90A4AE;
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:after {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:before {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip.apexcharts-active {
+  opacity: 1;
+}
+
+.apexcharts-yaxistooltip-hidden {
+  display: none;
+}
+
+.apexcharts-xcrosshairs,
+.apexcharts-ycrosshairs {
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xcrosshairs.apexcharts-active,
+.apexcharts-ycrosshairs.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-ycrosshairs-hidden {
+  opacity: 0;
+}
+
+.apexcharts-selection-rect {
+  cursor: move;
+}
+
+.svg_select_boundingRect, .svg_select_points_rot {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.apexcharts-selection-rect + g .svg_select_boundingRect,
+.apexcharts-selection-rect + g .svg_select_points_rot {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.apexcharts-selection-rect + g .svg_select_points_l,
+.apexcharts-selection-rect + g .svg_select_points_r {
+  cursor: ew-resize;
+  opacity: 1;
+  visibility: visible;
+}
+
+.svg_select_points {
+  fill: #efefef;
+  stroke: #333;
+  rx: 2;
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-zoom {
+  cursor: crosshair
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-pan {
+  cursor: move
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon,
+.apexcharts-reset-icon,
+.apexcharts-pan-icon,
+.apexcharts-selection-icon,
+.apexcharts-menu-icon,
+.apexcharts-toolbar-custom-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  color: #6E8192;
+  text-align: center;
+}
+
+.apexcharts-zoom-icon svg,
+.apexcharts-zoomin-icon svg,
+.apexcharts-zoomout-icon svg,
+.apexcharts-reset-icon svg,
+.apexcharts-menu-icon svg {
+  fill: #6E8192;
+}
+
+.apexcharts-selection-icon svg {
+  fill: #444;
+  transform: scale(0.76)
+}
+
+.apexcharts-theme-dark .apexcharts-zoom-icon svg,
+.apexcharts-theme-dark .apexcharts-zoomin-icon svg,
+.apexcharts-theme-dark .apexcharts-zoomout-icon svg,
+.apexcharts-theme-dark .apexcharts-reset-icon svg,
+.apexcharts-theme-dark .apexcharts-pan-icon svg,
+.apexcharts-theme-dark .apexcharts-selection-icon svg,
+.apexcharts-theme-dark .apexcharts-menu-icon svg,
+.apexcharts-theme-dark .apexcharts-toolbar-custom-icon svg {
+  fill: #f3f4f5;
+}
+
+.apexcharts-canvas .apexcharts-zoom-icon.apexcharts-selected svg,
+.apexcharts-canvas .apexcharts-selection-icon.apexcharts-selected svg,
+.apexcharts-canvas .apexcharts-reset-zoom-icon.apexcharts-selected svg {
+  fill: #008FFB;
+}
+
+.apexcharts-theme-light .apexcharts-selection-icon:not(.apexcharts-selected):hover svg,
+.apexcharts-theme-light .apexcharts-zoom-icon:not(.apexcharts-selected):hover svg,
+.apexcharts-theme-light .apexcharts-zoomin-icon:hover svg,
+.apexcharts-theme-light .apexcharts-zoomout-icon:hover svg,
+.apexcharts-theme-light .apexcharts-reset-icon:hover svg,
+.apexcharts-theme-light .apexcharts-menu-icon:hover svg {
+  fill: #333;
+}
+
+.apexcharts-selection-icon,
+.apexcharts-menu-icon {
+  position: relative;
+}
+
+.apexcharts-reset-icon {
+  margin-left: 5px;
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-reset-icon,
+.apexcharts-menu-icon {
+  transform: scale(0.85);
+}
+
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon {
+  transform: scale(0.7)
+}
+
+.apexcharts-zoomout-icon {
+  margin-right: 3px;
+}
+
+.apexcharts-pan-icon {
+  transform: scale(0.62);
+  position: relative;
+  left: 1px;
+  top: 0px;
+}
+
+.apexcharts-pan-icon svg {
+  fill: #fff;
+  stroke: #6E8192;
+  stroke-width: 2;
+}
+
+.apexcharts-pan-icon.apexcharts-selected svg {
+  stroke: #008FFB;
+}
+
+.apexcharts-pan-icon:not(.apexcharts-selected):hover svg {
+  stroke: #333;
+}
+
+.apexcharts-toolbar {
+  position: absolute;
+  z-index: 11;
+  max-width: 176px;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0px 6px 2px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apexcharts-menu {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px;
+  right: 10px;
+  opacity: 0;
+  min-width: 110px;
+  transition: 0.15s ease all;
+  pointer-events: none;
+}
+
+.apexcharts-menu.apexcharts-menu-open {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-menu-item {
+  padding: 6px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.apexcharts-theme-light .apexcharts-menu-item:hover {
+  background: #eee;
+}
+
+.apexcharts-theme-dark .apexcharts-menu {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .apexcharts-canvas:hover .apexcharts-toolbar {
+    opacity: 1;
+  }
+}
+
+.apexcharts-datalabel.apexcharts-element-hidden {
+  opacity: 0;
+}
+
+.apexcharts-pie-label,
+.apexcharts-datalabels,
+.apexcharts-datalabel,
+.apexcharts-datalabel-label,
+.apexcharts-datalabel-value {
+  cursor: default;
+  pointer-events: none;
+}
+
+.apexcharts-pie-label-delay {
+  opacity: 0;
+  animation-name: opaque;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.apexcharts-canvas .apexcharts-element-hidden {
+  opacity: 0;
+}
+
+.apexcharts-hide .apexcharts-series-points {
+  opacity: 0;
+}
+
+.apexcharts-gridline,
+.apexcharts-annotation-rect,
+.apexcharts-tooltip .apexcharts-marker,
+.apexcharts-area-series .apexcharts-area,
+.apexcharts-line,
+.apexcharts-zoom-rect,
+.apexcharts-toolbar svg,
+.apexcharts-area-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-line-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-radar-series path,
+.apexcharts-radar-series polygon {
+  pointer-events: none;
+}
+
+
+/* markers */
+
+.apexcharts-marker {
+  transition: 0.15s ease all;
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Resize generated styles */
+
+@keyframes resizeanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.resize-triggers {
+  animation: 1ms resizeanim;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.resize-triggers,
+.resize-triggers>div,
+.contract-trigger:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.resize-triggers>div {
+  background: #eee;
+  overflow: auto;
+}
+
+.contract-trigger:before {
+  width: 200%;
+  height: 200%;
+}</style><script type="text/javascript" src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/embedapi.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
+.MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
+.mjx-chtml[tabindex]:focus, body :focus .mjx-chtml[tabindex] {display: inline-table}
+.mjx-full-width {text-align: center; display: table-cell!important; width: 10000em}
+.mjx-math {display: inline-block; border-collapse: separate; border-spacing: 0}
+.mjx-math * {display: inline-block; -webkit-box-sizing: content-box!important; -moz-box-sizing: content-box!important; box-sizing: content-box!important; text-align: left}
+.mjx-numerator {display: block; text-align: center}
+.mjx-denominator {display: block; text-align: center}
+.MJXc-stacked {height: 0; position: relative}
+.MJXc-stacked > * {position: absolute}
+.MJXc-bevelled > * {display: inline-block}
+.mjx-stack {display: inline-block}
+.mjx-op {display: block}
+.mjx-under {display: table-cell}
+.mjx-over {display: block}
+.mjx-over > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-under > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-stack > .mjx-sup {display: block}
+.mjx-stack > .mjx-sub {display: block}
+.mjx-prestack > .mjx-presup {display: block}
+.mjx-prestack > .mjx-presub {display: block}
+.mjx-delim-h > .mjx-char {display: inline-block}
+.mjx-surd {vertical-align: top}
+.mjx-surd + .mjx-box {display: inline-flex}
+.mjx-mphantom * {visibility: hidden}
+.mjx-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 2px 3px; font-style: normal; font-size: 90%}
+.mjx-annotation-xml {line-height: normal}
+.mjx-menclose > svg {fill: none; stroke: currentColor; overflow: visible}
+.mjx-mtr {display: table-row}
+.mjx-mlabeledtr {display: table-row}
+.mjx-mtd {display: table-cell; text-align: center}
+.mjx-label {display: table-row}
+.mjx-box {display: inline-block}
+.mjx-block {display: block}
+.mjx-span {display: inline}
+.mjx-char {display: block; white-space: pre}
+.mjx-itable {display: inline-table; width: auto}
+.mjx-row {display: table-row}
+.mjx-cell {display: table-cell}
+.mjx-table {display: table; width: 100%}
+.mjx-line {display: block; height: 0}
+.mjx-strut {width: 0; padding-top: 1em}
+.mjx-vsize {width: 0}
+.MJXc-space1 {margin-left: .167em}
+.MJXc-space2 {margin-left: .222em}
+.MJXc-space3 {margin-left: .278em}
+.mjx-chartest {display: block; visibility: hidden; position: absolute; top: 0; line-height: normal; font-size: 500%}
+.mjx-chartest .mjx-char {display: inline}
+.mjx-chartest .mjx-box {padding-top: 1000px}
+.MJXc-processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MJXc-processed {display: none}
+.mjx-test {font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.mjx-test.mjx-test-display {display: table!important}
+.mjx-test.mjx-test-inline {display: inline!important; margin-right: -1px}
+.mjx-test.mjx-test-default {display: block!important; clear: both}
+.mjx-ex-box {display: inline-block!important; position: absolute; overflow: hidden; min-height: 0; max-height: none; padding: 0; border: 0; margin: 0; width: 1px; height: 60ex}
+.mjx-test-inline .mjx-left-box {display: inline-block; width: 0; float: left}
+.mjx-test-inline .mjx-right-box {display: inline-block; width: 0; float: right}
+.mjx-test-display .mjx-right-box {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+#MathJax_CHTML_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.mjx-chtml .mjx-noError {line-height: 1.2; vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+.MJXc-TeX-unknown-R {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: normal}
+.MJXc-TeX-unknown-I {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: normal}
+.MJXc-TeX-unknown-B {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: bold}
+.MJXc-TeX-unknown-BI {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: bold}
+.MJXc-TeX-ams-R {font-family: MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}
+.MJXc-TeX-cal-B {font-family: MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}
+.MJXc-TeX-frak-R {font-family: MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}
+.MJXc-TeX-frak-B {font-family: MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}
+.MJXc-TeX-math-BI {font-family: MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}
+.MJXc-TeX-sans-R {font-family: MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}
+.MJXc-TeX-sans-B {font-family: MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}
+.MJXc-TeX-sans-I {font-family: MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}
+.MJXc-TeX-script-R {font-family: MJXc-TeX-script-R,MJXc-TeX-script-Rw}
+.MJXc-TeX-type-R {font-family: MJXc-TeX-type-R,MJXc-TeX-type-Rw}
+.MJXc-TeX-cal-R {font-family: MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}
+.MJXc-TeX-main-B {font-family: MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}
+.MJXc-TeX-main-I {font-family: MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}
+.MJXc-TeX-main-R {font-family: MJXc-TeX-main-R,MJXc-TeX-main-Rw}
+.MJXc-TeX-math-I {font-family: MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}
+.MJXc-TeX-size1-R {font-family: MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}
+.MJXc-TeX-size2-R {font-family: MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}
+.MJXc-TeX-size3-R {font-family: MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}
+.MJXc-TeX-size4-R {font-family: MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}
+.MJXc-TeX-vec-R {font-family: MJXc-TeX-vec-R,MJXc-TeX-vec-Rw}
+.MJXc-TeX-vec-B {font-family: MJXc-TeX-vec-B,MJXc-TeX-vec-Bx,MJXc-TeX-vec-Bw}
+@font-face {font-family: MJXc-TeX-ams-R; src: local('MathJax_AMS'), local('MathJax_AMS-Regular')}
+@font-face {font-family: MJXc-TeX-ams-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-B; src: local('MathJax_Caligraphic Bold'), local('MathJax_Caligraphic-Bold')}
+@font-face {font-family: MJXc-TeX-cal-Bx; src: local('MathJax_Caligraphic'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-cal-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-R; src: local('MathJax_Fraktur'), local('MathJax_Fraktur-Regular')}
+@font-face {font-family: MJXc-TeX-frak-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-B; src: local('MathJax_Fraktur Bold'), local('MathJax_Fraktur-Bold')}
+@font-face {font-family: MJXc-TeX-frak-Bx; src: local('MathJax_Fraktur'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-frak-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-BI; src: local('MathJax_Math BoldItalic'), local('MathJax_Math-BoldItalic')}
+@font-face {font-family: MJXc-TeX-math-BIx; src: local('MathJax_Math'); font-weight: bold; font-style: italic}
+@font-face {font-family: MJXc-TeX-math-BIw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-R; src: local('MathJax_SansSerif'), local('MathJax_SansSerif-Regular')}
+@font-face {font-family: MJXc-TeX-sans-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-B; src: local('MathJax_SansSerif Bold'), local('MathJax_SansSerif-Bold')}
+@font-face {font-family: MJXc-TeX-sans-Bx; src: local('MathJax_SansSerif'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-sans-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-I; src: local('MathJax_SansSerif Italic'), local('MathJax_SansSerif-Italic')}
+@font-face {font-family: MJXc-TeX-sans-Ix; src: local('MathJax_SansSerif'); font-style: italic}
+@font-face {font-family: MJXc-TeX-sans-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-script-R; src: local('MathJax_Script'), local('MathJax_Script-Regular')}
+@font-face {font-family: MJXc-TeX-script-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-type-R; src: local('MathJax_Typewriter'), local('MathJax_Typewriter-Regular')}
+@font-face {font-family: MJXc-TeX-type-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-R; src: local('MathJax_Caligraphic'), local('MathJax_Caligraphic-Regular')}
+@font-face {font-family: MJXc-TeX-cal-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-B; src: local('MathJax_Main Bold'), local('MathJax_Main-Bold')}
+@font-face {font-family: MJXc-TeX-main-Bx; src: local('MathJax_Main'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-main-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-I; src: local('MathJax_Main Italic'), local('MathJax_Main-Italic')}
+@font-face {font-family: MJXc-TeX-main-Ix; src: local('MathJax_Main'); font-style: italic}
+@font-face {font-family: MJXc-TeX-main-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-R; src: local('MathJax_Main'), local('MathJax_Main-Regular')}
+@font-face {font-family: MJXc-TeX-main-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-I; src: local('MathJax_Math Italic'), local('MathJax_Math-Italic')}
+@font-face {font-family: MJXc-TeX-math-Ix; src: local('MathJax_Math'); font-style: italic}
+@font-face {font-family: MJXc-TeX-math-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size1-R; src: local('MathJax_Size1'), local('MathJax_Size1-Regular')}
+@font-face {font-family: MJXc-TeX-size1-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size2-R; src: local('MathJax_Size2'), local('MathJax_Size2-Regular')}
+@font-face {font-family: MJXc-TeX-size2-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size3-R; src: local('MathJax_Size3'), local('MathJax_Size3-Regular')}
+@font-face {font-family: MJXc-TeX-size3-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
+@font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-vec-R; src: local('MathJax_Vector'), local('MathJax_Vector-Regular')}
+@font-face {font-family: MJXc-TeX-vec-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-vec-B; src: local('MathJax_Vector Bold'), local('MathJax_Vector-Bold')}
+@font-face {font-family: MJXc-TeX-vec-Bx; src: local('MathJax_Vector'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-vec-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf') format('opentype')}
+</style></head>
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+    <div id="dokuwiki__site"><div id="dokuwiki__top" class="site dokuwiki mode_show tpl_dokuwiki loggedIn    ">
+
+        
+<!-- ********** HEADER ********** -->
+<div id="dokuwiki__header"><div class="pad group">
+
+    
+    <div class="headings group">
+        <ul class="a11y skip">
+            <li><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#dokuwiki__content">przejście do zawartości</a></li>
+        </ul>
+
+        <h1><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=start" accesskey="h" title="[H]"><img src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/logo.png" width="64" height="64" alt=""> <span>pw20we.cs.put.poznan.pl</span></a></h1>
+            </div>
+
+    <div class="tools group">
+        <!-- USER TOOLS -->
+                    <div id="dokuwiki__usertools">
+                <h3 class="a11y">Narzędzia użytkownika</h3>
+                <ul>
+                    <li class="user">Zalogowany jako: <bdi>s160130</bdi> (<bdi>s160130</bdi>)</li><li class="action profile"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=profile" title="Aktualizuj profil" rel="nofollow"><span>Aktualizuj profil</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2 3h20c1.05 0 2 .95 2 2v14c0 1.05-.95 2-2 2H2c-1.05 0-2-.95-2-2V5c0-1.05.95-2 2-2m12 3v1h8V6h-8m0 2v1h8V8h-8m0 2v1h7v-1h-7m-6 3.91C6 13.91 2 15 2 17v1h12v-1c0-2-4-3.09-6-3.09M8 6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg></a></li><li class="action logout"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=logout&amp;sectok=68bc5b8ccd189ba87f773d2d5ce5cbbc" title="Wyloguj" rel="nofollow"><span>Wyloguj</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 17.25V14h-7v-4h7V6.75L22.25 12 17 17.25M13 2a2 2 0 0 1 2 2v4h-2V4H4v16h9v-4h2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9z"></path></svg></a></li>                </ul>
+            </div>
+        
+        <!-- SITE TOOLS -->
+        <div id="dokuwiki__sitetools">
+            <h3 class="a11y">Narzędzia witryny</h3>
+            <form action="https://pw20we.cs.put.poznan.pl/doku.php?id=start" method="get" role="search" class="search doku_form" id="dw__search" accept-charset="utf-8"><input type="hidden" name="do" value="search"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><div class="no"><input name="q" type="text" class="edit" title="[F]" accesskey="f" placeholder="Szukaj" autocomplete="on" id="qsearch__in" value=""><button value="1" type="submit" title="Szukaj">Szukaj</button><div id="qsearch__out" class="ajax_qsearch JSpopup" style="display: none;"></div></div></form>            <div class="mobileTools">
+                <form action="https://pw20we.cs.put.poznan.pl/doku.php" method="get" accept-charset="utf-8"><div class="no"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><input type="hidden" name="sectok" value="68bc5b8ccd189ba87f773d2d5ce5cbbc"><select name="do" class="edit quickselect" title="Narzędzia"><option value="">Narzędzia</option><optgroup label="Narzędzia strony"><option value="edit">Edytuj stronę</option><option value="revisions">Poprzednie wersje</option><option value="export_odt">ODT export</option><option value="backlink">Odnośniki</option></optgroup><optgroup label="Narzędzia witryny"><option value="recent">Ostatnie zmiany</option><option value="media">Menadżer multimediów</option><option value="index">Indeks</option></optgroup><optgroup label="Narzędzia użytkownika"><option value="profile">Aktualizuj profil</option><option value="logout">Wyloguj</option></optgroup></select><button type="submit" style="display: none;">&gt;</button></div></form>            </div>
+            <ul>
+                <li class="action recent"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=recent" title="Ostatnie zmiany [r]" rel="nofollow" accesskey="r">Ostatnie zmiany</a></li><li class="action media"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=media&amp;ns=pr" title="Menadżer multimediów" rel="nofollow">Menadżer multimediów</a></li><li class="action index"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=index" title="Indeks [x]" rel="nofollow" accesskey="x">Indeks</a></li>            </ul>
+        </div>
+
+    </div>
+
+    <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                                        <div class="trace"><span class="bchead">Ślad:</span> <span class="bcsep">•</span> <bdi><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202" class="breadcrumbs" title="pr26:s160202:s160202">s160202</a></bdi> <span class="bcsep">•</span> <bdi><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:2026" class="breadcrumbs" title="pr:2026">2026</a></bdi> <span class="bcsep">•</span> <bdi><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:szablon_projektu" class="breadcrumbs" title="pr:szablon_projektu">szablon_projektu</a></bdi> <span class="bcsep">•</span> <span class="curid"><bdi><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych" class="breadcrumbs" title="pr:generowanie_spojnych_grafow_calkowitych">generowanie_spojnych_grafow_calkowitych</a></bdi></span></div>
+                    </div>
+    
+
+
+    <hr class="a11y">
+</div></div><!-- /header -->
+
+        <div class="wrapper group">
+
+            
+            <!-- ********** CONTENT ********** -->
+            <div id="dokuwiki__content"><div class="pad group">
+                
+                <div class="pageId"><span>pr:generowanie_spojnych_grafow_calkowitych</span></div>
+
+                <div class="page group">
+                                                            <!-- wikipage start -->
+                    <!-- TOC START -->
+<div id="dw__toc" class="dw__toc">
+<h3 class="toggle open" style="cursor: pointer;"><strong><span>−</span></strong>Spis treści</h3>
+<div aria-expanded="true" style="">
+
+<ul class="toc">
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#generowanie_spojnych_grafow_calkowitych">Generowanie spójnych grafów całkowitych</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#modyfikacje_kodu">Modyfikacje kodu</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#dekompozycja_procesu_generowania_grafow_danego_rzedu">Dekompozycja procesu generowania grafów danego rzędu</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#okreslenie_wielkosci_przeszukiwaniej_przestrzenii_kombinatorycznej">Określenie wielkości przeszukiwaniej przestrzenii kombinatorycznej</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#generowanie_niespojnych_grafow_calkowitych">Generowanie niespójnych grafów całkowitych</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#transformacja_reprezentacji_grafow">Transformacja reprezentacji grafów</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#rodziny_grafow_calkowitych">Rodziny grafów całkowitych</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#weryfikacja_czy_w_grafie_g_jest_indukowany_podgraf_h">Weryfikacja czy w grafie <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;G&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.484em; padding-bottom: 0.278em;">G</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math></span></span><script type="math/tex" id="MathJax-Element-1">G</script> jest indukowany podgraf <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-4" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-5" class="mjx-mrow"><span id="MJXc-Node-6" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.484em; padding-bottom: 0.278em; padding-right: 0.057em;">H</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>H</mi></math></span></span><script type="math/tex" id="MathJax-Element-2">H</script></a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#raportowanie_wynikow">Raportowanie wyników</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#estymacja_czasu_wykonania_zadania_na_podstawie_czesciowych_wynikow">Estymacja czasu wykonania zadania na podstawie częściowych wyników</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#rozwiazania_suboptymalne_grafy_prawie_calkowite">Rozwiązania suboptymalne (grafy prawie całkowite)</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#budowanie_grafow_calkowitych_z_mniejszych">Budowanie grafów całkowitych z mniejszych</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#filmy">Filmy</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#literatura">Literatura</a></div></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h3 class="sectionedit1" id="generowanie_spojnych_grafow_calkowitych">Generowanie spójnych grafów całkowitych</h3>
+<div class="level3">
+<ul>
+<li class="level1 node"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:grafy_calkowite" class="wikilink1" title="ok:grafy_calkowite" data-wiki-id="ok:grafy_calkowite">grafy_calkowite</a></div>
+<ul>
+<li class="level2"><div class="li"> <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-3-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-7" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-8" class="mjx-mrow"><span id="MJXc-Node-9" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span><span id="MJXc-Node-10" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.063em; padding-bottom: 0.303em;">=</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>=</mo></math></span></span><script type="math/tex" id="MathJax-Element-3">n=</script> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs16:16" class="wikilink1" title="ok:gcs16:16" data-wiki-id="ok:gcs16:16">16</a>; Możliwość wykorzystania operacji grafowych: <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-4-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;16&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;&amp;#x22C5;&lt;/mo&gt;&lt;mn&gt;8&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mo&gt;&amp;#x22C5;&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-11" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12" class="mjx-mrow"><span id="MJXc-Node-13" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">16</span></span><span id="MJXc-Node-14" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.063em; padding-bottom: 0.303em;">=</span></span><span id="MJXc-Node-15" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">2</span></span><span id="MJXc-Node-16" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.303em;">⋅</span></span><span id="MJXc-Node-17" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">8</span></span><span id="MJXc-Node-18" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.063em; padding-bottom: 0.303em;">=</span></span><span id="MJXc-Node-19" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">4</span></span><span id="MJXc-Node-20" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.303em;">⋅</span></span><span id="MJXc-Node-21" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>16</mn><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>8</mn><mo>=</mo><mn>4</mn><mo>⋅</mo><mn>4</mn></math></span></span><script type="math/tex" id="MathJax-Element-4">16 = 2 \cdot 8 = 4 \cdot 4</script></div>
+</li>
+<li class="level2"><div class="li"> <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-5-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-22" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-23" class="mjx-mrow"><span id="MJXc-Node-24" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span><span id="MJXc-Node-25" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.063em; padding-bottom: 0.303em;">=</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>=</mo></math></span></span><script type="math/tex" id="MathJax-Element-5">n=</script> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs17:17" class="wikilink1" title="ok:gcs17:17" data-wiki-id="ok:gcs17:17">17</a> </div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<img src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/img.php" class="media" alt="">
+</p>
+<ul>
+<li class="level1 node"><div class="li"> Grafy rzędu <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs14:14" class="wikilink1" title="ok:gcs14:14" data-wiki-id="ok:gcs14:14">14</a>, <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs15:15" class="wikilink1" title="ok:gcs15:15" data-wiki-id="ok:gcs15:15">15</a>, <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs16:16" class="wikilink1" title="ok:gcs16:16" data-wiki-id="ok:gcs16:16">16</a>, <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs17:17" class="wikilink1" title="ok:gcs17:17" data-wiki-id="ok:gcs17:17">17</a></div>
+<ul>
+<li class="level2"><div class="li"> Zobacz: <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs15:15#skrypt_15" class="wikilink1" title="ok:gcs15:15" data-wiki-id="ok:gcs15:15">skrypt_15</a> </div>
+</li>
+</ul>
+</li>
+<li class="level1 node"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:nauty" class="wikilink1" title="ok:nauty" data-wiki-id="ok:nauty">nauty</a></div>
+<ul>
+<li class="level2"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:nauty#cuda_dekoder" class="wikilink1" title="ok:nauty" data-wiki-id="ok:nauty">cuda_dekoder</a></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:sito" class="wikilink1" title="ok:sito" data-wiki-id="ok:sito">sito</a> (OpenMP, CUDA, OpenCL)</div>
+</li>
+<li class="level1"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:grafy_calkowite" class="wikilink1" title="ok:grafy_calkowite" data-wiki-id="ok:grafy_calkowite">grafy_calkowite</a> </div>
+</li>
+<li class="level1 node"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=bd:serwer_redis" class="wikilink1" title="bd:serwer_redis" data-wiki-id="bd:serwer_redis">serwer_redis</a></div>
+<ul>
+<li class="level2"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=psw:uslugi_sieciowe" class="wikilink1" title="psw:uslugi_sieciowe" data-wiki-id="psw:uslugi_sieciowe">uslugi_sieciowe</a> ← <code>netcat</code></div>
+</li>
+</ul>
+</li>
+<li class="level1 node"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:przetwarzanie_wsadowe" class="wikilink1" title="ok:przetwarzanie_wsadowe" data-wiki-id="ok:przetwarzanie_wsadowe">przetwarzanie_wsadowe</a></div>
+<ul>
+<li class="level2"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=psw:przetwarzanie_potokowe" class="wikilink1" title="psw:przetwarzanie_potokowe" data-wiki-id="psw:przetwarzanie_potokowe">przetwarzanie_potokowe</a> </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Projekty studentów: <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok21:s148225:s148225" class="wikilink1" title="ok21:s148225:s148225" data-wiki-id="ok21:s148225:s148225">s148225</a>, <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr23:s148225:s148225" class="wikilink1" title="pr23:s148225:s148225" data-wiki-id="pr23:s148225:s148225">s148225</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pd25:pd013:wirtyna_internetowa_zawierajaca_ontologie_wybranej_klasy_grafow" class="wikilink1" title="pd25:pd013:wirtyna_internetowa_zawierajaca_ontologie_wybranej_klasy_grafow" data-wiki-id="pd25:pd013:wirtyna_internetowa_zawierajaca_ontologie_wybranej_klasy_grafow">wirtyna_internetowa_zawierajaca_ontologie_wybranej_klasy_grafow</a></div>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_1"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Generowanie spójnych grafów całkowitych] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="generowanie_spojnych_grafow_calkowitych"><input type="hidden" name="codeblockOffset" value="0"><input type="hidden" name="range" value="1-1582"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Generowanie spójnych grafów całkowitych">Edytuj</button></div></form></div>
+<h3 class="sectionedit2" id="modyfikacje_kodu">Modyfikacje kodu</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Dodać w pliku <code>geng.c</code> nową opcję, która wyprowadza do pliku wyjściowego tylko grafy całkowite </div>
+</li>
+</ul>
+<pre class="code c"><span class="co2">#ifdef OUTPROC</span>
+    outproc <span class="sy0">=</span> OUTPROC<span class="sy0">;</span>
+<span class="co2">#else</span>
+    <span class="kw1">if</span> <span class="br0">(</span>nautyformat<span class="br0">)</span>   outproc <span class="sy0">=</span> writenauty<span class="sy0">;</span>
+    <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span>yformat<span class="br0">)</span>  outproc <span class="sy0">=</span> writeny<span class="sy0">;</span>
+    <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span>nooutput<span class="br0">)</span> outproc <span class="sy0">=</span> nullwrite<span class="sy0">;</span>
+    <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span>sparse6<span class="br0">)</span>  outproc <span class="sy0">=</span> writes6x<span class="sy0">;</span>
+    <span class="kw1">else</span>               outproc <span class="sy0">=</span> writeg6x<span class="sy0">;</span>
+<span class="co2">#endif </span></pre>
+<pre class="code c"><span class="kw4">void</span> writeg6x<span class="br0">(</span>FILE <span class="sy0">*</span>f<span class="sy0">,</span> graph <span class="sy0">*</span>g<span class="sy0">,</span> <span class="kw4">int</span> n<span class="br0">)</span></pre>
+<ul>
+<li class="level1"><div class="li"> Zmodyfikować funkcję <code>eigensymmatrix</code> tak, aby w parametrze można było przekazać <code>graph *g</code>. Jeżeli graf jest całkowity funkcja zwraca 1 lub 0 w przeciwnym przypadku. Przekazywanie parametrów <code>k1</code> i <code>k2</code> jest zbędne.</div>
+</li>
+</ul>
+<pre class="code c"><span class="kw4">int</span> eigensymmatrix<span class="br0">(</span><span class="kw4">int</span> n<span class="sy0">,</span> <span class="kw4">long</span> <span class="kw4">double</span><span class="sy0">*</span> a<span class="sy0">,</span> <span class="kw4">int</span> k1<span class="sy0">,</span> <span class="kw4">int</span> k2<span class="sy0">,</span> <span class="kw4">long</span> <span class="kw4">double</span><span class="sy0">*</span> x<span class="br0">)</span></pre>
+
+</div>
+
+<h5 id="plik_makefilein_plik_makefile">Plik makefile.in / Plik makefile</h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Zobacz: <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:nauty" class="wikilink1" title="ok:nauty" data-wiki-id="ok:nauty">nauty</a></div>
+</li>
+<li class="level1 node"><div class="li"> Dodać nowe źródła sito.h i sito.c (Zobacz: <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:sito" class="wikilink1" title="ok:sito" data-wiki-id="ok:sito">sito</a> ← bez <code>main</code>) </div>
+<ul>
+<li class="level2 node"><div class="li"> Inna możliwość to zbudowanie biblioteki ładowanej dynamicznie (.dll lub .so) (może być pomocne przy łączeniu z CUDA)</div>
+<ul>
+<li class="level3"><div class="li"> Zobacz: <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pp21:s153936:s153936" class="wikilink1" title="pp21:s153936:s153936" data-wiki-id="pp21:s153936:s153936">s153936</a>, <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pp21:s151918:s151918" class="wikilink1" title="pp21:s151918:s151918" data-wiki-id="pp21:s151918:s151918">s151918</a></div>
+</li>
+<li class="level3"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=psw:dlfcn.h" class="wikilink1" title="psw:dlfcn.h" data-wiki-id="psw:dlfcn.h">dlfcn.h</a></div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Zmodyfikować flagi <code>CFLAGS</code> (OpenMP)</div>
+</li>
+</ul>
+<pre class="code">geng : ${GTOOLSH} geng.c gtoolsW.o nautyW1.o nautilW1.o naugraphW1.o schreier.o naurng.o
+	${CC} -o geng ${CFLAGS} ${W1} geng.c gtoolsW.o nautyW1.o \
+		nautilW1.o naugraphW1.o schreier.o naurng.o ${LDFLAGS}</pre>
+<ul>
+<li class="level1"><div class="li"> <code>PRUNE</code> ???</div>
+</li>
+<li class="level1"><div class="li"> Dodać opcję <code>-i</code> uaktywniającą opcję filtrowania grafów całkowitych.</div>
+</li>
+</ul>
+<pre class="code">geng : ${GTOOLSH} geng.c gtoolsW.o nautyW1.o nautilW1.o naugraphW1.o schreier.o naurng.o
+	${CC} -o geng ${CFLAGS} ${W1} -DOUTPROC=writeintegral geng.c gtoolsW.o nautyW1.o \
+		nautilW1.o naugraphW1.o schreier.o naurng.o ${LDFLAGS}</pre>
+
+</div>
+<div class="secedit editbutton_section editbutton_2"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Modyfikacje kodu] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="modyfikacje_kodu"><input type="hidden" name="codeblockOffset" value="0"><input type="hidden" name="range" value="1583-3375"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Modyfikacje kodu">Edytuj</button></div></form></div>
+<h3 class="sectionedit3" id="dekompozycja_procesu_generowania_grafow_danego_rzedu">Dekompozycja procesu generowania grafów danego rzędu</h3>
+<div class="level3">
+<ul>
+<li class="level1 node"><div class="li"> Generowanie grafów danego rzędu (<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-6-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-26" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-27" class="mjx-mrow"><span id="MJXc-Node-28" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-6">n</script>) i rozmiaru (liczba krawędzi: <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-7-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-29" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-30" class="mjx-mrow"><span id="MJXc-Node-31" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">e</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>e</mi></math></span></span><script type="math/tex" id="MathJax-Element-7">e</script>)</div>
+<ul>
+<li class="level2"><div class="li"> Generowanie grafów danego rzędu (<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-8-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-32" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-33" class="mjx-mrow"><span id="MJXc-Node-34" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-8">n</script>) i ustalonym ciągu stopni wierzchołków <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-9-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-35" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-36" class="mjx-mrow"><span id="MJXc-Node-37" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">c</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math></span></span><script type="math/tex" id="MathJax-Element-9">c</script> → <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gnc" class="wikilink1" title="ok:gnc" data-wiki-id="ok:gnc">gnc</a></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Opcja: <code>res/mod</code> w generatorze</div>
+</li>
+<li class="level1 node"><div class="li"> Generowanie grafów danego rzędu (<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-10-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-38" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-39" class="mjx-mrow"><span id="MJXc-Node-40" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-10">n</script>) i ustalonym spektrum → <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=minizinc:jezyk_minizinc" class="wikilink1" title="minizinc:jezyk_minizinc" data-wiki-id="minizinc:jezyk_minizinc">jezyk_minizinc</a></div>
+<ul>
+<li class="level2"><div class="li"> <a href="https://play.minizinc.dev/" class="urlextern" title="https://play.minizinc.dev/" rel="ugc nofollow">https://play.minizinc.dev/</a> </div>
+</li>
+</ul>
+</li>
+</ul>
+<dl class="file">
+<dt><a href="https://pw20we.cs.put.poznan.pl/doku.php?do=export_code&amp;id=pr:generowanie_spojnych_grafow_calkowitych&amp;codeblock=5" title="Pobierz zrzut" class="mediafile mf_mzn">widma.mzn</a></dt>
+<dd><pre class="code file minizinc">int: n ;
+int: k ; 
+array[1..n] of var -(n-1)..(n-1): x;
+&nbsp;
+constraint sum(x)=0;
+constraint x[1]&gt;x[2];
+constraint forall(i in 2..(n-1)) (x[i]&gt;=x[i+1]);
+constraint forall(i in 2..n) (x[1]&gt;=abs(x[i]));
+constraint sum([i*i | i in x])=2*k;
+&nbsp;
+solve satisfy; 
+&nbsp;
+n=15;
+k=68;</pre>
+</dd></dl>
+
+</div>
+<div class="secedit editbutton_section editbutton_3"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Dekompozycja procesu generowania grafów danego rzędu] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="dekompozycja_procesu_generowania_grafow_danego_rzedu"><input type="hidden" name="codeblockOffset" value="5"><input type="hidden" name="range" value="3376-4094"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Dekompozycja procesu generowania grafów danego rzędu">Edytuj</button></div></form></div>
+<h3 class="sectionedit4" id="okreslenie_wielkosci_przeszukiwaniej_przestrzenii_kombinatorycznej">Określenie wielkości przeszukiwaniej przestrzenii kombinatorycznej</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-11-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi class=&quot;MJX-tex-caligraphic&quot; mathvariant=&quot;script&quot;&gt;O&lt;/mi&gt;&lt;/mrow&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;msup&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mrow&gt;&lt;mstyle scriptlevel=&quot;0&quot;&gt;&lt;mrow class=&quot;MJX-TeXAtom-OPEN&quot;&gt;&lt;mo maxsize=&quot;1.2em&quot; minsize=&quot;1.2em&quot;&gt;(&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;mfrac linethickness=&quot;0&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mfrac&gt;&lt;mstyle scriptlevel=&quot;0&quot;&gt;&lt;mrow class=&quot;MJX-TeXAtom-CLOSE&quot;&gt;&lt;mo maxsize=&quot;1.2em&quot; minsize=&quot;1.2em&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-41" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-42" class="mjx-mrow"><span id="MJXc-Node-43" class="mjx-texatom"><span id="MJXc-Node-44" class="mjx-mrow"><span id="MJXc-Node-45" class="mjx-mi"><span class="mjx-char MJXc-TeX-cal-R" style="padding-top: 0.423em; padding-bottom: 0.363em;">O</span></span></span></span><span id="MJXc-Node-46" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">(</span></span><span id="MJXc-Node-47" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-48" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-49" class="mjx-texatom" style=""><span id="MJXc-Node-50" class="mjx-mrow"><span id="MJXc-Node-51" class="mjx-mrow"><span id="MJXc-Node-52" class="mjx-TeXmathchoice"><span id="MJXc-Node-53" class="mjx-mstyle"><span id="MJXc-Node-54" class="mjx-mrow"><span id="MJXc-Node-55" class="mjx-texatom"><span id="MJXc-Node-56" class="mjx-mrow"><span id="MJXc-Node-57" class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.603em; padding-bottom: 0.603em;">(</span></span></span></span></span></span></span><span id="MJXc-Node-58" class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.424em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 0.6em; top: -1.095em;"><span id="MJXc-Node-59" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 0.6em; bottom: -0.513em;"><span id="MJXc-Node-60" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">2</span></span></span></span><span class="mjx-vsize" style="height: 1.136em; vertical-align: -0.363em;"></span></span><span id="MJXc-Node-61" class="mjx-TeXmathchoice"><span id="MJXc-Node-62" class="mjx-mstyle"><span id="MJXc-Node-63" class="mjx-mrow"><span id="MJXc-Node-64" class="mjx-texatom"><span id="MJXc-Node-65" class="mjx-mrow"><span id="MJXc-Node-66" class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.603em; padding-bottom: 0.603em;">)</span></span></span></span></span></span></span></span></span></span></span></span><span id="MJXc-Node-67" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow class="MJX-TeXAtom-ORD"><mi class="MJX-tex-caligraphic" mathvariant="script">O</mi></mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mrow><mstyle scriptlevel="0"><mrow class="MJX-TeXAtom-OPEN"><mo maxsize="1.2em" minsize="1.2em">(</mo></mrow></mstyle><mfrac linethickness="0"><mi>n</mi><mn>2</mn></mfrac><mstyle scriptlevel="0"><mrow class="MJX-TeXAtom-CLOSE"><mo maxsize="1.2em" minsize="1.2em">)</mo></mrow></mstyle></mrow></mrow></msup><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-11">\mathcal{O}(2^{n \choose 2})</script>  – liczba symetrycznych macierzy zerojedynkowych z zerami na głównej przekątnej. → <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ppp:zlozonosc" class="wikilink1" title="ppp:zlozonosc" data-wiki-id="ppp:zlozonosc">zlozonosc</a> </div>
+</li>
+<li class="level1"><div class="li"> liczba grafów → <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:problemy_zliczania" class="wikilink1" title="ok:problemy_zliczania" data-wiki-id="ok:problemy_zliczania">problemy_zliczania</a> </div>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_4"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Określenie wielkości przeszukiwaniej przestrzenii kombinatorycznej] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="okreslenie_wielkosci_przeszukiwaniej_przestrzenii_kombinatorycznej"><input type="hidden" name="codeblockOffset" value="6"><input type="hidden" name="range" value="4095-4365"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Określenie wielkości przeszukiwaniej przestrzenii kombinatorycznej">Edytuj</button></div></form></div>
+<h3 class="sectionedit5" id="generowanie_niespojnych_grafow_calkowitych">Generowanie niespójnych grafów całkowitych</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Generowanie podziałów liczby <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-12-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-68" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-69" class="mjx-mrow"><span id="MJXc-Node-70" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-12">n</script> → <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ppp:zbior_potegowy" class="wikilink1" title="ppp:zbior_potegowy" data-wiki-id="ppp:zbior_potegowy">zbior_potegowy</a></div>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_5"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Generowanie niespójnych grafów całkowitych] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="generowanie_niespojnych_grafow_calkowitych"><input type="hidden" name="codeblockOffset" value="6"><input type="hidden" name="range" value="4366-4487"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Generowanie niespójnych grafów całkowitych">Edytuj</button></div></form></div>
+<h3 class="sectionedit6" id="transformacja_reprezentacji_grafow">Transformacja reprezentacji grafów</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Pakiet nauty</div>
+</li>
+<li class="level1"><div class="li"> Format poz → <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs13:13" class="wikilink1" title="ok:gcs13:13" data-wiki-id="ok:gcs13:13">13</a></div>
+</li>
+<li class="level1"><div class="li"> Sprawdzanie grafu i jego dopełnienia (czy jest całkowite). Wówczas jednak nie można ograniczyć się tylko do grafów spójnych w czasie generacji.</div>
+</li>
+<li class="level1 node"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pp:networkx" class="wikilink1" title="pp:networkx" data-wiki-id="pp:networkx">networkx</a></div>
+<ul>
+<li class="level2"><div class="li"> Format <code>poz</code>: <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcsd2:2" class="wikilink1" title="ok:gcsd2:2" data-wiki-id="ok:gcsd2:2">2</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs14:14_84" class="wikilink1" title="ok:gcs14:14_84" data-wiki-id="ok:gcs14:14_84">14_84</a>  </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gnr" class="wikilink1" title="ok:gnr" data-wiki-id="ok:gnr">gnr</a> ← <code>genreg95</code>, <code>.asc</code>, <code>.scd</code></div>
+</li>
+<li class="level1"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ppp:maxima" class="wikilink1" title="ppp:maxima" data-wiki-id="ppp:maxima">maxima</a></div>
+</li>
+<li class="level1 node"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pp:sympy" class="wikilink1" title="pp:sympy" data-wiki-id="pp:sympy">sympy</a> ← Matrix ← <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pp:numpy" class="wikilink1" title="pp:numpy" data-wiki-id="pp:numpy">numpy</a></div>
+<ul>
+<li class="level2"><div class="li"> <a href="https://networkx.org/documentation/stable/reference/generated/networkx.convert_matrix.to_numpy_array.html" class="urlextern" title="https://networkx.org/documentation/stable/reference/generated/networkx.convert_matrix.to_numpy_array.html" rel="ugc nofollow">https://networkx.org/documentation/stable/reference/generated/networkx.convert_matrix.to_numpy_array.html</a></div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>Zadanie</strong> Kompresja / Dekompresja pliku z grafami (lub ustalonej paczki grafów). </div>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_6"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Transformacja reprezentacji grafów] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="transformacja_reprezentacji_grafow"><input type="hidden" name="codeblockOffset" value="6"><input type="hidden" name="range" value="4488-5144"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Transformacja reprezentacji grafów">Edytuj</button></div></form></div>
+<h3 class="sectionedit7" id="rodziny_grafow_calkowitych">Rodziny grafów całkowitych</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:wiatraki" class="wikilink1" title="ok:wiatraki" data-wiki-id="ok:wiatraki">Wiatraki</a></div>
+</li>
+<li class="level1 node"><div class="li"> KTZ: Sprawdzić czy te grafy są całkowite: </div>
+<ul>
+<li class="level2"><div class="li">  <a href="https://docs.dwavequantum.com/en/latest/ocean/api_ref_dnx/generators.html" class="urlextern" title="https://docs.dwavequantum.com/en/latest/ocean/api_ref_dnx/generators.html" rel="ugc nofollow">https://docs.dwavequantum.com/en/latest/ocean/api_ref_dnx/generators.html</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="https://pypi.org/project/dwave-networkx/" class="urlextern" title="https://pypi.org/project/dwave-networkx/" rel="ugc nofollow">https://pypi.org/project/dwave-networkx/</a></div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_7"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Rodziny grafów całkowitych] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="rodziny_grafow_calkowitych"><input type="hidden" name="codeblockOffset" value="6"><input type="hidden" name="range" value="5145-5390"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Rodziny grafów całkowitych">Edytuj</button></div></form></div>
+<h3 class="sectionedit8" id="weryfikacja_czy_w_grafie_g_jest_indukowany_podgraf_h">Weryfikacja czy w grafie <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-13-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;G&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-71" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-72" class="mjx-mrow"><span id="MJXc-Node-73" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.323em;">G</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math></span></span><script type="math/tex" id="MathJax-Element-13">G</script> jest indukowany podgraf <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-14-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-74" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-75" class="mjx-mrow"><span id="MJXc-Node-76" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.269em; padding-right: 0.057em;">H</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>H</mi></math></span></span><script type="math/tex" id="MathJax-Element-14">H</script></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:isip" class="wikilink1" title="ok:isip" data-wiki-id="ok:isip">isip</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="https://networkx.org/documentation/stable/reference/generated/networkx.classes.function.induced_subgraph.html" class="urlextern" title="https://networkx.org/documentation/stable/reference/generated/networkx.classes.function.induced_subgraph.html" rel="ugc nofollow">https://networkx.org/documentation/stable/reference/generated/networkx.classes.function.induced_subgraph.html</a>    </div>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_8"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Weryfikacja czy w grafie $G$ jest indukowany podgraf $H$] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="weryfikacja_czy_w_grafie_g_jest_indukowany_podgraf_h"><input type="hidden" name="codeblockOffset" value="6"><input type="hidden" name="range" value="5391-5596"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Weryfikacja czy w grafie $G$ jest indukowany podgraf $H$">Edytuj</button></div></form></div>
+<h3 class="sectionedit9" id="raportowanie_wynikow">Raportowanie wyników</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="https://www.dokuwiki.org/plugin:tablecalc" class="urlextern" title="https://www.dokuwiki.org/plugin:tablecalc" rel="ugc nofollow">https://www.dokuwiki.org/plugin:tablecalc</a></div>
+</li>
+<li class="level1"><div class="li"> Histogram → <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs12:12" class="wikilink1" title="ok:gcs12:12" data-wiki-id="ok:gcs12:12">12</a></div>
+</li>
+<li class="level1"><div class="li"> Baza danych → <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=bd20:zadanie_01" class="wikilink1" title="bd20:zadanie_01" data-wiki-id="bd20:zadanie_01">zadanie_01</a></div>
+</li>
+<li class="level1"><div class="li"> Wtyczka dokuwiki (<a href="https://pw20we.cs.put.poznan.pl/doku.php?id=et:jezyk_php" class="wikilink1" title="et:jezyk_php" data-wiki-id="et:jezyk_php">PHP</a>)</div>
+</li>
+</ul>
+
+<p>
+<img src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/img(1).php" class="media" alt="">
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_9"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Raportowanie wyników] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="raportowanie_wynikow"><input type="hidden" name="codeblockOffset" value="6"><input type="hidden" name="range" value="5597-6521"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Raportowanie wyników">Edytuj</button></div></form></div>
+<h3 class="sectionedit10" id="estymacja_czasu_wykonania_zadania_na_podstawie_czesciowych_wynikow">Estymacja czasu wykonania zadania na podstawie częściowych wyników</h3>
+<div class="level3">
+
+</div>
+<div class="secedit editbutton_section editbutton_10"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Estymacja czasu wykonania zadania na podstawie częściowych wyników] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="estymacja_czasu_wykonania_zadania_na_podstawie_czesciowych_wynikow"><input type="hidden" name="codeblockOffset" value="6"><input type="hidden" name="range" value="6522-6603"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Estymacja czasu wykonania zadania na podstawie częściowych wyników">Edytuj</button></div></form></div>
+<h3 class="sectionedit11" id="rozwiazania_suboptymalne_grafy_prawie_calkowite">Rozwiązania suboptymalne (grafy prawie całkowite)</h3>
+<div class="level3">
+
+</div>
+
+<h4 id="funkcja_celu_minimalizacja">Funkcja celu (minimalizacja)</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-15-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;munderover&gt;&lt;mo&gt;&amp;#x2211;&lt;/mo&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;/munderover&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;|&lt;/mo&gt;&lt;/mrow&gt;&lt;mo movablelimits=&quot;true&quot; form=&quot;prefix&quot;&gt;min&lt;/mo&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BB;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mo fence=&quot;false&quot; stretchy=&quot;false&quot;&gt;&amp;#x2308;&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BB;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo fence=&quot;false&quot; stretchy=&quot;false&quot;&gt;&amp;#x2309;&lt;/mo&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BB;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mo fence=&quot;false&quot; stretchy=&quot;false&quot;&gt;&amp;#x230A;&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BB;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo fence=&quot;false&quot; stretchy=&quot;false&quot;&gt;&amp;#x230B;&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;|&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-77" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-78" class="mjx-mrow"><span id="MJXc-Node-79" class="mjx-munderover"><span class="mjx-base"><span id="MJXc-Node-80" class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.543em; padding-bottom: 0.543em;">∑</span></span></span><span class="mjx-stack" style="vertical-align: -0.31em;"><span class="mjx-sup" style="font-size: 70.7%; padding-bottom: 0.422em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-86" class="mjx-texatom" style=""><span id="MJXc-Node-87" class="mjx-mrow"><span id="MJXc-Node-88" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; padding-right: 0.071em;"><span id="MJXc-Node-81" class="mjx-texatom" style=""><span id="MJXc-Node-82" class="mjx-mrow"><span id="MJXc-Node-83" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.423em; padding-bottom: 0.303em;">i</span></span><span id="MJXc-Node-84" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.063em; padding-bottom: 0.303em;">=</span></span><span id="MJXc-Node-85" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">1</span></span></span></span></span></span></span><span id="MJXc-Node-89" class="mjx-texatom MJXc-space1"><span id="MJXc-Node-90" class="mjx-mrow"><span id="MJXc-Node-91" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">|</span></span></span></span><span id="MJXc-Node-92" class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">min</span></span><span id="MJXc-Node-93" class="mjx-texatom MJXc-space1"><span id="MJXc-Node-94" class="mjx-mrow"><span id="MJXc-Node-95" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">(</span></span><span id="MJXc-Node-96" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-97" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.303em;">λ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-98" class="mjx-texatom" style=""><span id="MJXc-Node-99" class="mjx-mrow"><span id="MJXc-Node-100" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.423em; padding-bottom: 0.303em;">i</span></span></span></span></span></span><span id="MJXc-Node-101" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.303em; padding-bottom: 0.423em;">−</span></span><span id="MJXc-Node-102" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">⌈</span></span><span id="MJXc-Node-103" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-104" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.303em;">λ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-105" class="mjx-texatom" style=""><span id="MJXc-Node-106" class="mjx-mrow"><span id="MJXc-Node-107" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.423em; padding-bottom: 0.303em;">i</span></span></span></span></span></span><span id="MJXc-Node-108" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">⌉</span></span><span id="MJXc-Node-109" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.177em; padding-bottom: 0.543em;">,</span></span><span id="MJXc-Node-110" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-111" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.303em;">λ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-112" class="mjx-texatom" style=""><span id="MJXc-Node-113" class="mjx-mrow"><span id="MJXc-Node-114" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.423em; padding-bottom: 0.303em;">i</span></span></span></span></span></span><span id="MJXc-Node-115" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.303em; padding-bottom: 0.423em;">−</span></span><span id="MJXc-Node-116" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">⌊</span></span><span id="MJXc-Node-117" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-118" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.303em;">λ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-119" class="mjx-texatom" style=""><span id="MJXc-Node-120" class="mjx-mrow"><span id="MJXc-Node-121" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.423em; padding-bottom: 0.303em;">i</span></span></span></span></span></span><span id="MJXc-Node-122" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">⌋</span></span><span id="MJXc-Node-123" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">)</span></span></span></span><span id="MJXc-Node-124" class="mjx-texatom"><span id="MJXc-Node-125" class="mjx-mrow"><span id="MJXc-Node-126" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">|</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><munderover><mo>∑</mo><mrow class="MJX-TeXAtom-ORD"><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow class="MJX-TeXAtom-ORD"><mi>n</mi></mrow></munderover><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo movablelimits="true" form="prefix">min</mo><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">(</mo><msub><mi>λ</mi><mrow class="MJX-TeXAtom-ORD"><mi>i</mi></mrow></msub><mo>−</mo><mo fence="false" stretchy="false">⌈</mo><msub><mi>λ</mi><mrow class="MJX-TeXAtom-ORD"><mi>i</mi></mrow></msub><mo fence="false" stretchy="false">⌉</mo><mo>,</mo><msub><mi>λ</mi><mrow class="MJX-TeXAtom-ORD"><mi>i</mi></mrow></msub><mo>−</mo><mo fence="false" stretchy="false">⌊</mo><msub><mi>λ</mi><mrow class="MJX-TeXAtom-ORD"><mi>i</mi></mrow></msub><mo fence="false" stretchy="false">⌋</mo><mo stretchy="false">)</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow></math></span></span><script type="math/tex" id="MathJax-Element-15">\sum_{i=1}^{n} | \min {(\lambda_{i}-\lceil \lambda_{i}\rceil, \lambda_{i}-\lfloor \lambda_{i}\rfloor )} |</script></div>
+</li>
+</ul>
+<pre class="code">def funkcjacelu0(Sp):
+  return sum([abs(round(e)-e) for e in Sp])</pre>
+
+</div>
+
+<h4 id="funkcja_celu_maksymalizacja">Funkcja celu (maksymalizacja)</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-16-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;&amp;#x22C5;&lt;/mo&gt;&lt;munderover&gt;&lt;mo&gt;&amp;#x2211;&lt;/mo&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;/munderover&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;|&lt;/mo&gt;&lt;/mrow&gt;&lt;mo movablelimits=&quot;true&quot; form=&quot;prefix&quot;&gt;min&lt;/mo&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BB;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mo fence=&quot;false&quot; stretchy=&quot;false&quot;&gt;&amp;#x2308;&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BB;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo fence=&quot;false&quot; stretchy=&quot;false&quot;&gt;&amp;#x2309;&lt;/mo&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BB;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mo fence=&quot;false&quot; stretchy=&quot;false&quot;&gt;&amp;#x230A;&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BB;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo fence=&quot;false&quot; stretchy=&quot;false&quot;&gt;&amp;#x230B;&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;|&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-127" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-128" class="mjx-mrow"><span id="MJXc-Node-129" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span><span id="MJXc-Node-130" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.303em; padding-bottom: 0.423em;">−</span></span><span id="MJXc-Node-131" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">2</span></span><span id="MJXc-Node-132" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.303em;">⋅</span></span><span id="MJXc-Node-133" class="mjx-munderover MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-134" class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.543em; padding-bottom: 0.543em;">∑</span></span></span><span class="mjx-stack" style="vertical-align: -0.31em;"><span class="mjx-sup" style="font-size: 70.7%; padding-bottom: 0.422em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-140" class="mjx-texatom" style=""><span id="MJXc-Node-141" class="mjx-mrow"><span id="MJXc-Node-142" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; padding-right: 0.071em;"><span id="MJXc-Node-135" class="mjx-texatom" style=""><span id="MJXc-Node-136" class="mjx-mrow"><span id="MJXc-Node-137" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.423em; padding-bottom: 0.303em;">i</span></span><span id="MJXc-Node-138" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.063em; padding-bottom: 0.303em;">=</span></span><span id="MJXc-Node-139" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">1</span></span></span></span></span></span></span><span id="MJXc-Node-143" class="mjx-texatom MJXc-space1"><span id="MJXc-Node-144" class="mjx-mrow"><span id="MJXc-Node-145" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">|</span></span></span></span><span id="MJXc-Node-146" class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.363em; padding-bottom: 0.363em;">min</span></span><span id="MJXc-Node-147" class="mjx-texatom MJXc-space1"><span id="MJXc-Node-148" class="mjx-mrow"><span id="MJXc-Node-149" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">(</span></span><span id="MJXc-Node-150" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-151" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.303em;">λ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-152" class="mjx-texatom" style=""><span id="MJXc-Node-153" class="mjx-mrow"><span id="MJXc-Node-154" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.423em; padding-bottom: 0.303em;">i</span></span></span></span></span></span><span id="MJXc-Node-155" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.303em; padding-bottom: 0.423em;">−</span></span><span id="MJXc-Node-156" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">⌈</span></span><span id="MJXc-Node-157" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-158" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.303em;">λ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-159" class="mjx-texatom" style=""><span id="MJXc-Node-160" class="mjx-mrow"><span id="MJXc-Node-161" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.423em; padding-bottom: 0.303em;">i</span></span></span></span></span></span><span id="MJXc-Node-162" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">⌉</span></span><span id="MJXc-Node-163" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.177em; padding-bottom: 0.543em;">,</span></span><span id="MJXc-Node-164" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-165" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.303em;">λ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-166" class="mjx-texatom" style=""><span id="MJXc-Node-167" class="mjx-mrow"><span id="MJXc-Node-168" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.423em; padding-bottom: 0.303em;">i</span></span></span></span></span></span><span id="MJXc-Node-169" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.303em; padding-bottom: 0.423em;">−</span></span><span id="MJXc-Node-170" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">⌊</span></span><span id="MJXc-Node-171" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-172" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.303em;">λ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-173" class="mjx-texatom" style=""><span id="MJXc-Node-174" class="mjx-mrow"><span id="MJXc-Node-175" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.423em; padding-bottom: 0.303em;">i</span></span></span></span></span></span><span id="MJXc-Node-176" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">⌋</span></span><span id="MJXc-Node-177" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">)</span></span></span></span><span id="MJXc-Node-178" class="mjx-texatom"><span id="MJXc-Node-179" class="mjx-mrow"><span id="MJXc-Node-180" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.483em; padding-bottom: 0.603em;">|</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>−</mo><mn>2</mn><mo>⋅</mo><munderover><mo>∑</mo><mrow class="MJX-TeXAtom-ORD"><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow class="MJX-TeXAtom-ORD"><mi>n</mi></mrow></munderover><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo movablelimits="true" form="prefix">min</mo><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">(</mo><msub><mi>λ</mi><mrow class="MJX-TeXAtom-ORD"><mi>i</mi></mrow></msub><mo>−</mo><mo fence="false" stretchy="false">⌈</mo><msub><mi>λ</mi><mrow class="MJX-TeXAtom-ORD"><mi>i</mi></mrow></msub><mo fence="false" stretchy="false">⌉</mo><mo>,</mo><msub><mi>λ</mi><mrow class="MJX-TeXAtom-ORD"><mi>i</mi></mrow></msub><mo>−</mo><mo fence="false" stretchy="false">⌊</mo><msub><mi>λ</mi><mrow class="MJX-TeXAtom-ORD"><mi>i</mi></mrow></msub><mo fence="false" stretchy="false">⌋</mo><mo stretchy="false">)</mo></mrow><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow></math></span></span><script type="math/tex" id="MathJax-Element-16">n - 2 \cdot \sum_{i=1}^{n} | \min {(\lambda_{i}-\lceil \lambda_{i}\rceil, \lambda_{i}-\lfloor \lambda_{i}\rfloor )} |</script></div>
+</li>
+</ul>
+<pre class="code python"><span class="kw1">def</span> funkcjacelu1<span class="br0">(</span>Sp<span class="br0">)</span>:
+  <span class="kw1">return</span> <span class="kw2">len</span><span class="br0">(</span>Sp<span class="br0">)</span> - <span class="nu0">2</span>*<span class="kw2">sum</span><span class="br0">(</span><span class="br0">[</span><span class="kw2">abs</span><span class="br0">(</span><span class="kw2">round</span><span class="br0">(</span>e<span class="br0">)</span>-e<span class="br0">)</span> <span class="kw1">for</span> e <span class="kw1">in</span> Sp<span class="br0">]</span><span class="br0">)</span></pre>
+
+</div>
+
+<h4 id="liczba_wartosci_calkowitych_w_spektrum">Liczba wartości całkowitych w spektrum</h4>
+<div class="level4">
+<pre class="code python"><span class="kw1">import</span> <span class="kw3">math</span>
+<span class="kw1">def</span> liczbacalkowitych<span class="br0">(</span>Sp<span class="br0">)</span>:
+<span class="kw1">return</span> <span class="kw2">sum</span><span class="br0">(</span><span class="br0">[</span><span class="nu0">1</span> <span class="kw1">for</span> v <span class="kw1">in</span> Sp <span class="kw1">if</span> <span class="kw3">math</span>.<span class="me1">isclose</span><span class="br0">(</span>v<span class="sy0">,</span><span class="kw2">round</span><span class="br0">(</span>v<span class="br0">)</span><span class="sy0">,</span>abs_tol<span class="sy0">=</span><span class="nu0">0.001</span><span class="br0">)</span><span class="br0">]</span><span class="br0">)</span></pre>
+
+</div>
+<div class="secedit editbutton_section editbutton_11"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Rozwiązania suboptymalne (grafy prawie całkowite)] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="rozwiazania_suboptymalne_grafy_prawie_calkowite"><input type="hidden" name="codeblockOffset" value="6"><input type="hidden" name="range" value="6604-7344"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Rozwiązania suboptymalne (grafy prawie całkowite)">Edytuj</button></div></form></div>
+<h3 class="sectionedit12" id="budowanie_grafow_calkowitych_z_mniejszych">Budowanie grafów całkowitych z mniejszych</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Dodanie 1 wierzchołka i przejście na dopełnienie</div>
+</li>
+<li class="level1"><div class="li"> Przejście na dopełnienie, dodanie 1 wierzchołka i przejście na dopełnienie </div>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_12"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Budowanie grafów całkowitych z mniejszych] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="budowanie_grafow_calkowitych_z_mniejszych"><input type="hidden" name="codeblockOffset" value="9"><input type="hidden" name="range" value="7345-7542"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Budowanie grafów całkowitych z mniejszych">Edytuj</button></div></form></div>
+<h3 class="sectionedit13" id="filmy">Filmy</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="https://www.youtube.com/watch?v=uTUVhsxdGS8" class="urlextern" title="https://www.youtube.com/watch?v=uTUVhsxdGS8" rel="ugc nofollow">https://www.youtube.com/watch?v=uTUVhsxdGS8</a> (YT:Spectral Graph Theory For Dummies)</div>
+</li>
+<li class="level1"><div class="li"> <a href="https://www.youtube.com/watch?v=Uk5DUtHY7LM" class="urlextern" title="https://www.youtube.com/watch?v=Uk5DUtHY7LM" rel="ugc nofollow">https://www.youtube.com/watch?v=Uk5DUtHY7LM</a> (YT:Lecture 7: More on Energy Eigenstates)</div>
+</li>
+<li class="level1 node"><div class="li"> <a href="https://en.wikipedia.org/wiki/Bojan_Mohar" class="urlextern" title="https://en.wikipedia.org/wiki/Bojan_Mohar" rel="ugc nofollow">https://en.wikipedia.org/wiki/Bojan_Mohar</a></div>
+<ul>
+<li class="level2"><div class="li"> <a href="https://www.youtube.com/watch?v=XipwoWir5l8" class="urlextern" title="https://www.youtube.com/watch?v=XipwoWir5l8" rel="ugc nofollow">https://www.youtube.com/watch?v=XipwoWir5l8</a> (YT:Bojan Mohar - Lecture 1, Minicourse „Graphs and their eigenvalues”)</div>
+</li>
+<li class="level2"><div class="li"> <a href="https://www.youtube.com/watch?v=UC6mBLJRnUc" class="urlextern" title="https://www.youtube.com/watch?v=UC6mBLJRnUc" rel="ugc nofollow">https://www.youtube.com/watch?v=UC6mBLJRnUc</a> (YT:Bojan Mohar - Lecture 2, Minicourse „Graphs and their eigenvalues”)</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_13"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Filmy] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="filmy"><input type="hidden" name="codeblockOffset" value="9"><input type="hidden" name="range" value="7543-8047"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Filmy">Edytuj</button></div></form></div>
+<h3 class="sectionedit14" id="literatura">Literatura</h3>
+<div class="level3">
+<ol>
+<li class="level1"><div class="li"> Krystyna Balińska, Krzysztof T. Zwierzyński, <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:projektowanie_algorytmow_grafowych" class="wikilink1" title="ok:projektowanie_algorytmow_grafowych" data-wiki-id="ok:projektowanie_algorytmow_grafowych">Projektowanie algorytmów grafowych</a>, Wydawnictwo Politechniki Poznańskiej, Poznań, 2002.</div>
+</li>
+<li class="level1 node"><div class="li"> <a href="https://drive.google.com/file/d/0By4cZCSmjiyQSW54N21HUmQ0NjA/view?usp=sharing" class="urlextern" title="https://drive.google.com/file/d/0By4cZCSmjiyQSW54N21HUmQ0NjA/view?usp=sharing" rel="ugc nofollow">K.T. Zwierzyński, Praca magisterska, Poznań 1999</a></div>
+<ol>
+<li class="level2"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/lib/exe/fetch.php?media=ok:1999_ktz_praca_magisterska.pdf" class="media mediafile mf_pdf" title="ok:1999_ktz_praca_magisterska.pdf (827.5 KB)">1999_ktz_praca_magisterska.pdf</a></div>
+</li>
+</ol>
+</li>
+<li class="level1 node"><div class="li"> <a href="https://drive.google.com/file/d/0By4cZCSmjiyQRFQzQ0E3M2pfUzQ/view?usp=sharing" class="urlextern" title="https://drive.google.com/file/d/0By4cZCSmjiyQRFQzQ0E3M2pfUzQ/view?usp=sharing" rel="ugc nofollow">K.T. Zwierzyński, Algorytmy losowe w generowaniu, badaniu i wizualizacji grafów, Rozprawa doktorska, Poznań 2004</a></div>
+<ol>
+<li class="level2"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/lib/exe/fetch.php?media=ok:2004_ktz_rozprawa_doktorska.pdf" class="media mediafile mf_pdf" title="ok:2004_ktz_rozprawa_doktorska.pdf (1 MB)">2004_ktz_rozprawa_doktorska.pdf</a></div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> <a href="https://pw20we.cs.put.poznan.pl/lib/exe/fetch.php?media=pr:2002_rep_483_13_.pdf" class="media mediafile mf_pdf" title="pr:2002_rep_483_13_.pdf (1 MB)">2002_rep_483_13_.pdf</a> On generating all integral graphs on 13 vertices</div>
+</li>
+<li class="level1"><div class="li"> <a href="https://mathworld.wolfram.com/ConnectedGraph.html" class="urlextern" title="https://mathworld.wolfram.com/ConnectedGraph.html" rel="ugc nofollow">https://mathworld.wolfram.com/ConnectedGraph.html</a></div>
+</li>
+<li class="level1 node"><div class="li"> <a href="https://www.pcss.pl/technologie-kwantowe/" class="urlextern" title="https://www.pcss.pl/technologie-kwantowe/" rel="ugc nofollow">https://www.pcss.pl/technologie-kwantowe/</a></div>
+<ol>
+<li class="level2"><div class="li"> <a href="https://sdk.orcacomputing.com/" class="urlextern" title="https://sdk.orcacomputing.com/" rel="ugc nofollow">https://sdk.orcacomputing.com/</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="https://github.com/orcacomputing" class="urlextern" title="https://github.com/orcacomputing" rel="ugc nofollow">https://github.com/orcacomputing</a></div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> <a href="https://users.cecs.anu.edu.au/~bdm/data/graphs.html" class="urlextern" title="https://users.cecs.anu.edu.au/~bdm/data/graphs.html" rel="ugc nofollow">https://users.cecs.anu.edu.au/~bdm/data/graphs.html</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="https://www.researchgate.net/publication/266220332_Some_new_integral_graphs" class="urlextern" title="https://www.researchgate.net/publication/266220332_Some_new_integral_graphs" rel="ugc nofollow">https://www.researchgate.net/publication/266220332_Some_new_integral_graphs</a> </div>
+</li>
+</ol>
+
+</div>
+<div class="secedit editbutton_section editbutton_14"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1785821990"><input type="hidden" name="summary" value="[Literatura] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="literatura"><input type="hidden" name="codeblockOffset" value="9"><input type="hidden" name="range" value="8048-"><input type="hidden" name="id" value="pr:generowanie_spojnych_grafow_calkowitych"><button type="submit" title="Literatura">Edytuj</button></div></form></div>
+                    <!-- wikipage stop -->
+                                    </div>
+
+                <div class="docInfo"><bdi>pr/generowanie_spojnych_grafow_calkowitych.txt</bdi> · ostatnio zmienione: 2026/08/04 05:39 przez <bdi>zwierzak</bdi></div>
+
+                            </div></div><!-- /content -->
+
+            <hr class="a11y">
+
+            <!-- PAGE ACTIONS -->
+            <div id="dokuwiki__pagetools">
+                <h3 class="a11y">Narzędzia strony</h3>
+                <div class="tools">
+                    <ul>
+                        <li class="edit"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=edit" title="Edytuj stronę [e]" rel="nofollow" accesskey="e"><span>Edytuj stronę</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg></a></li><li class="revs"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=revisions" title="Poprzednie wersje [o]" rel="nofollow" accesskey="o"><span>Poprzednie wersje</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 7v5.11l4.71 2.79.79-1.28-4-2.37V7m0-5C8.97 2 5.91 3.92 4.27 6.77L2 4.5V11h6.5L5.75 8.25C6.96 5.73 9.5 4 12.5 4a7.5 7.5 0 0 1 7.5 7.5 7.5 7.5 0 0 1-7.5 7.5c-3.27 0-6.03-2.09-7.06-5h-2.1c1.1 4.03 4.77 7 9.16 7 5.24 0 9.5-4.25 9.5-9.5A9.5 9.5 0 0 0 12.5 2z"></path></svg></a></li><li class="backlink"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=backlink" title="Odnośniki" rel="nofollow"><span>Odnośniki</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42z"></path></svg></a></li><li class="export_odt"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych&amp;do=export_odt" title="ODT export" rel="nofollow"><span>ODT export</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m 18.5,20.5 v -11 l -6,-6 h -7 v 17 M 13,2 20,9 v 11.5 c 0,1 -0.5,1.5 -1.5,1.5 H 5.5 C 4.5,22 4,21.5 4,20.5 V 3.5 C 4,2.5 4.5,2 5.5,2"></path><path d="M 14.5,2.5 C 14,2 14,2 14.5,2 H 19 c 1,0 1,0 1,1 v 4.5 c 0,0.5 0,0.5 -0.5,0"></path></svg></a></li><li class="top"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:generowanie_spojnych_grafow_calkowitych#dokuwiki__top" title="Do góry [t]" rel="nofollow" accesskey="t"><span>Do góry</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path></svg></a></li>                    </ul>
+                </div>
+            </div>
+        </div><!-- /wrapper -->
+
+        
+<!-- ********** FOOTER ********** -->
+<div id="dokuwiki__footer"><div class="pad">
+    
+    <div class="buttons">
+                <a href="https://www.dokuwiki.org/donate" title="Donate"><img src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/button-donate.gif" width="80" height="15" alt="Donate"></a>
+        <a href="https://php.net/" title="Powered by PHP"><img src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/button-php.gif" width="80" height="15" alt="Powered by PHP"></a>
+        <a href="https://validator.w3.org/check/referer" title="Valid HTML5"><img src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/button-html5.png" width="80" height="15" alt="Valid HTML5"></a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/button-css.png" width="80" height="15" alt="Valid CSS"></a>
+        <a href="https://dokuwiki.org/" title="Driven by DokuWiki"><img src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/button-dw.png" width="80" height="15" alt="Driven by DokuWiki"></a>
+    </div>
+</div></div><!-- /footer -->
+
+    </div></div><!-- /site -->
+
+    <div class="no"><img src="./pr_generowanie_spojnych_grafow_calkowitych [pw20we.cs.put.poznan.pl]_files/taskrunner.php" width="2" height="1" alt=""></div>
+    <div id="screen__mode" class="no"></div>
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body></html>

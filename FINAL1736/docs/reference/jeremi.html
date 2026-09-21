@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202 -->
+<html lang="pl" dir="ltr" class="js desktop"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>pr26:s160202:s160202 [pw20we.cs.put.poznan.pl]</title>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki">
+<meta name="theme-color" content="#008800">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="pr26,s160202,s160202">
+<link rel="search" type="application/opensearchdescription+xml" href="https://pw20we.cs.put.poznan.pl/lib/exe/opensearch.php" title="pw20we.cs.put.poznan.pl">
+<link rel="start" href="https://pw20we.cs.put.poznan.pl/">
+<link rel="contents" href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=index" title="Indeks">
+<link rel="manifest" href="https://pw20we.cs.put.poznan.pl/lib/exe/manifest.php">
+<link rel="alternate" type="application/rss+xml" title="Ostatnie zmiany" href="https://pw20we.cs.put.poznan.pl/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Obecny katalog" href="https://pw20we.cs.put.poznan.pl/feed.php?mode=list&amp;ns=pr26:s160202">
+<link rel="edit" title="Edytuj stronę" href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=edit">
+<link rel="alternate" type="text/html" title="Czysty HTML" href="https://pw20we.cs.put.poznan.pl/doku.php?do=export_xhtml&amp;id=pr26:s160202:s160202">
+<link rel="alternate" type="text/plain" title="Znaczniki" href="https://pw20we.cs.put.poznan.pl/doku.php?do=export_raw&amp;id=pr26:s160202:s160202">
+<link rel="canonical" href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202">
+<link rel="stylesheet" href="./jeremi_files/css.php">
+<!--[if gte IE 9]><!-->
+<script>/*<![CDATA[*/var NS='pr26:s160202';var SIG=" --- \/\/[[s160130@student.put.poznan.pl|s160130]] 2026\/09\/19 11:54\/\/";var JSINFO = {"chartlang":"pl","chartlocale":"{\n  \"name\": \"pl\",\n  \"options\": {\n    \"months\": [\n      \"Stycze\u0144\",\n      \"Luty\",\n      \"Marzec\",\n      \"Kwiecie\u0144\",\n      \"Maj\",\n      \"Czerwiec\",\n      \"Lipiec\",\n      \"Sierpie\u0144\",\n      \"Wrzesie\u0144\",\n      \"Pa\u017adziernik\",\n      \"Listopad\",\n      \"Grudzie\u0144\"\n    ],\n    \"shortMonths\": [\n      \"Sty\",\n      \"Lut\",\n      \"Mar\",\n      \"Kwi\",\n      \"Maj\",\n      \"Cze\",\n      \"Lip\",\n      \"Sie\",\n      \"Wrz\",\n      \"Pa\u017a\",\n      \"Lis\",\n      \"Gru\"\n    ],\n    \"days\": [\n      \"Niedziela\",\n      \"Poniedzia\u0142ek\",\n      \"Wtorek\",\n      \"\u015aroda\",\n      \"Czwartek\",\n      \"Pi\u0105tek\",\n      \"Sobota\"\n    ],\n    \"shortDays\": [\"Nd\", \"Pn\", \"Wt\", \"\u015ar\", \"Cz\", \"Pt\", \"Sb\"],\n    \"toolbar\": {\n      \"exportToSVG\": \"Pobierz SVG\",\n      \"exportToPNG\": \"Pobierz PNG\",\n      \"exportToCSV\": \"Pobierz CSV\",\n      \"menu\": \"Menu\",\n      \"selection\": \"Wybieranie\",\n      \"selectionZoom\": \"Zoom: Wybieranie\",\n      \"zoomIn\": \"Zoom: Przybli\u017c\",\n      \"zoomOut\": \"Zoom: Oddal\",\n      \"pan\": \"Przesuwanie\",\n      \"reset\": \"Resetuj\"\n    }\n  }\n}\n","id":"pr26:s160202:s160202","namespace":"pr26:s160202","ACT":"show","useHeadingNavigation":0,"useHeadingContent":0};
+/*!]]>*/</script>
+<script charset="utf-8" src="./jeremi_files/jquery.php" defer="defer"></script>
+<script charset="utf-8" src="./jeremi_files/js.php" defer="defer"></script>
+<script charset="utf-8" src="./jeremi_files/abcjs_plugin-midi_6.0.0-beta.25-min.js"></script>
+<script type="text/x-mathjax-config;executed=true">/*<![CDATA[*/MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+        displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+        processEscapes: true
+    }
+});
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="./jeremi_files/MathJax.js"></script>
+<!--<![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="https://pw20we.cs.put.poznan.pl/lib/tpl/dokuwiki/images/favicon.ico">
+<link rel="apple-touch-icon" href="https://pw20we.cs.put.poznan.pl/lib/tpl/dokuwiki/images/apple-touch-icon.png">
+    <style type="text/css">.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  /* cannot give overflow: hidden as it will crop tooltips which overflow outside chart area */
+}
+
+
+/* scrollbar is not visible by default for legend, hence forcing the visibility */
+.apexcharts-canvas ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+
+.apexcharts-canvas ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+
+.apexcharts-inner {
+  position: relative;
+}
+
+.apexcharts-text tspan {
+  font-family: inherit;
+}
+
+.legend-mouseover-inactive {
+  transition: 0.15s ease all;
+  opacity: 0.20;
+}
+
+.apexcharts-series-collapsed {
+  opacity: 0;
+}
+
+.apexcharts-tooltip {
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px -4px #999;
+  cursor: default;
+  font-size: 14px;
+  left: 62px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light {
+  border: 1px solid #e3e3e3;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark {
+  color: #fff;
+  background: rgba(30, 30, 30, 0.8);
+}
+
+.apexcharts-tooltip * {
+  font-family: inherit;
+}
+
+
+.apexcharts-tooltip-title {
+  padding: 6px;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+  background: #ECEFF1;
+  border-bottom: 1px solid #ddd;
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #333;
+}
+
+.apexcharts-tooltip-text-y-value,
+.apexcharts-tooltip-text-goals-value,
+.apexcharts-tooltip-text-z-value {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.apexcharts-tooltip-text-y-label:empty,
+.apexcharts-tooltip-text-y-value:empty,
+.apexcharts-tooltip-text-goals-label:empty,
+.apexcharts-tooltip-text-goals-value:empty,
+.apexcharts-tooltip-text-z-value:empty {
+  display: none;
+}
+
+.apexcharts-tooltip-text-y-value,
+.apexcharts-tooltip-text-goals-value,
+.apexcharts-tooltip-text-z-value {
+  font-weight: 600;
+}
+
+.apexcharts-tooltip-text-goals-label, 
+.apexcharts-tooltip-text-goals-value {
+  padding: 6px 0 5px;
+}
+
+.apexcharts-tooltip-goals-group, 
+.apexcharts-tooltip-text-goals-label, 
+.apexcharts-tooltip-text-goals-value {
+  display: flex;
+}
+.apexcharts-tooltip-text-goals-label:not(:empty),
+.apexcharts-tooltip-text-goals-value:not(:empty) {
+  margin-top: -6px;
+}
+
+.apexcharts-tooltip-marker {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.apexcharts-tooltip-series-group {
+  padding: 0 10px;
+  display: none;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active .apexcharts-tooltip-marker {
+  opacity: 1;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active,
+.apexcharts-tooltip-series-group:last-child {
+  padding-bottom: 4px;
+}
+
+.apexcharts-tooltip-series-group-hidden {
+  opacity: 0;
+  height: 0;
+  line-height: 0;
+  padding: 0 !important;
+}
+
+.apexcharts-tooltip-y-group {
+  padding: 6px 0 5px;
+}
+
+.apexcharts-tooltip-box, .apexcharts-custom-tooltip {
+  padding: 4px 8px;
+}
+
+.apexcharts-tooltip-boxPlot {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.apexcharts-tooltip-box>div {
+  margin: 4px 0;
+}
+
+.apexcharts-tooltip-box span.value {
+  font-weight: bold;
+}
+
+.apexcharts-tooltip-rangebar {
+  padding: 5px 8px;
+}
+
+.apexcharts-tooltip-rangebar .category {
+  font-weight: 600;
+  color: #777;
+}
+
+.apexcharts-tooltip-rangebar .series-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.apexcharts-xaxistooltip {
+  opacity: 0;
+  padding: 9px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xaxistooltip.apexcharts-theme-dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-xaxistooltip:after,
+.apexcharts-xaxistooltip:before {
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-xaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.apexcharts-xaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+.apexcharts-xaxistooltip-bottom:after,
+.apexcharts-xaxistooltip-bottom:before {
+  bottom: 100%;
+}
+
+.apexcharts-xaxistooltip-top:after,
+.apexcharts-xaxistooltip-top:before {
+  top: 100%;
+}
+
+.apexcharts-xaxistooltip-bottom:after {
+  border-bottom-color: #ECEFF1;
+}
+
+.apexcharts-xaxistooltip-bottom:before {
+  border-bottom-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:after {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:before {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top:after {
+  border-top-color: #ECEFF1
+}
+
+.apexcharts-xaxistooltip-top:before {
+  border-top-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:after {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-yaxistooltip {
+  opacity: 0;
+  padding: 4px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+}
+
+.apexcharts-yaxistooltip.apexcharts-theme-dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-yaxistooltip:after,
+.apexcharts-yaxistooltip:before {
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-yaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.apexcharts-yaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-top: -7px;
+}
+
+.apexcharts-yaxistooltip-left:after,
+.apexcharts-yaxistooltip-left:before {
+  left: 100%;
+}
+
+.apexcharts-yaxistooltip-right:after,
+.apexcharts-yaxistooltip-right:before {
+  right: 100%;
+}
+
+.apexcharts-yaxistooltip-left:after {
+  border-left-color: #ECEFF1;
+}
+
+.apexcharts-yaxistooltip-left:before {
+  border-left-color: #90A4AE;
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:after {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:before {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right:after {
+  border-right-color: #ECEFF1;
+}
+
+.apexcharts-yaxistooltip-right:before {
+  border-right-color: #90A4AE;
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:after {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:before {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip.apexcharts-active {
+  opacity: 1;
+}
+
+.apexcharts-yaxistooltip-hidden {
+  display: none;
+}
+
+.apexcharts-xcrosshairs,
+.apexcharts-ycrosshairs {
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xcrosshairs.apexcharts-active,
+.apexcharts-ycrosshairs.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-ycrosshairs-hidden {
+  opacity: 0;
+}
+
+.apexcharts-selection-rect {
+  cursor: move;
+}
+
+.svg_select_boundingRect, .svg_select_points_rot {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.apexcharts-selection-rect + g .svg_select_boundingRect,
+.apexcharts-selection-rect + g .svg_select_points_rot {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.apexcharts-selection-rect + g .svg_select_points_l,
+.apexcharts-selection-rect + g .svg_select_points_r {
+  cursor: ew-resize;
+  opacity: 1;
+  visibility: visible;
+}
+
+.svg_select_points {
+  fill: #efefef;
+  stroke: #333;
+  rx: 2;
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-zoom {
+  cursor: crosshair
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-pan {
+  cursor: move
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon,
+.apexcharts-reset-icon,
+.apexcharts-pan-icon,
+.apexcharts-selection-icon,
+.apexcharts-menu-icon,
+.apexcharts-toolbar-custom-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  color: #6E8192;
+  text-align: center;
+}
+
+.apexcharts-zoom-icon svg,
+.apexcharts-zoomin-icon svg,
+.apexcharts-zoomout-icon svg,
+.apexcharts-reset-icon svg,
+.apexcharts-menu-icon svg {
+  fill: #6E8192;
+}
+
+.apexcharts-selection-icon svg {
+  fill: #444;
+  transform: scale(0.76)
+}
+
+.apexcharts-theme-dark .apexcharts-zoom-icon svg,
+.apexcharts-theme-dark .apexcharts-zoomin-icon svg,
+.apexcharts-theme-dark .apexcharts-zoomout-icon svg,
+.apexcharts-theme-dark .apexcharts-reset-icon svg,
+.apexcharts-theme-dark .apexcharts-pan-icon svg,
+.apexcharts-theme-dark .apexcharts-selection-icon svg,
+.apexcharts-theme-dark .apexcharts-menu-icon svg,
+.apexcharts-theme-dark .apexcharts-toolbar-custom-icon svg {
+  fill: #f3f4f5;
+}
+
+.apexcharts-canvas .apexcharts-zoom-icon.apexcharts-selected svg,
+.apexcharts-canvas .apexcharts-selection-icon.apexcharts-selected svg,
+.apexcharts-canvas .apexcharts-reset-zoom-icon.apexcharts-selected svg {
+  fill: #008FFB;
+}
+
+.apexcharts-theme-light .apexcharts-selection-icon:not(.apexcharts-selected):hover svg,
+.apexcharts-theme-light .apexcharts-zoom-icon:not(.apexcharts-selected):hover svg,
+.apexcharts-theme-light .apexcharts-zoomin-icon:hover svg,
+.apexcharts-theme-light .apexcharts-zoomout-icon:hover svg,
+.apexcharts-theme-light .apexcharts-reset-icon:hover svg,
+.apexcharts-theme-light .apexcharts-menu-icon:hover svg {
+  fill: #333;
+}
+
+.apexcharts-selection-icon,
+.apexcharts-menu-icon {
+  position: relative;
+}
+
+.apexcharts-reset-icon {
+  margin-left: 5px;
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-reset-icon,
+.apexcharts-menu-icon {
+  transform: scale(0.85);
+}
+
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon {
+  transform: scale(0.7)
+}
+
+.apexcharts-zoomout-icon {
+  margin-right: 3px;
+}
+
+.apexcharts-pan-icon {
+  transform: scale(0.62);
+  position: relative;
+  left: 1px;
+  top: 0px;
+}
+
+.apexcharts-pan-icon svg {
+  fill: #fff;
+  stroke: #6E8192;
+  stroke-width: 2;
+}
+
+.apexcharts-pan-icon.apexcharts-selected svg {
+  stroke: #008FFB;
+}
+
+.apexcharts-pan-icon:not(.apexcharts-selected):hover svg {
+  stroke: #333;
+}
+
+.apexcharts-toolbar {
+  position: absolute;
+  z-index: 11;
+  max-width: 176px;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0px 6px 2px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apexcharts-menu {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px;
+  right: 10px;
+  opacity: 0;
+  min-width: 110px;
+  transition: 0.15s ease all;
+  pointer-events: none;
+}
+
+.apexcharts-menu.apexcharts-menu-open {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-menu-item {
+  padding: 6px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.apexcharts-theme-light .apexcharts-menu-item:hover {
+  background: #eee;
+}
+
+.apexcharts-theme-dark .apexcharts-menu {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .apexcharts-canvas:hover .apexcharts-toolbar {
+    opacity: 1;
+  }
+}
+
+.apexcharts-datalabel.apexcharts-element-hidden {
+  opacity: 0;
+}
+
+.apexcharts-pie-label,
+.apexcharts-datalabels,
+.apexcharts-datalabel,
+.apexcharts-datalabel-label,
+.apexcharts-datalabel-value {
+  cursor: default;
+  pointer-events: none;
+}
+
+.apexcharts-pie-label-delay {
+  opacity: 0;
+  animation-name: opaque;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.apexcharts-canvas .apexcharts-element-hidden {
+  opacity: 0;
+}
+
+.apexcharts-hide .apexcharts-series-points {
+  opacity: 0;
+}
+
+.apexcharts-gridline,
+.apexcharts-annotation-rect,
+.apexcharts-tooltip .apexcharts-marker,
+.apexcharts-area-series .apexcharts-area,
+.apexcharts-line,
+.apexcharts-zoom-rect,
+.apexcharts-toolbar svg,
+.apexcharts-area-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-line-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-radar-series path,
+.apexcharts-radar-series polygon {
+  pointer-events: none;
+}
+
+
+/* markers */
+
+.apexcharts-marker {
+  transition: 0.15s ease all;
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Resize generated styles */
+
+@keyframes resizeanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.resize-triggers {
+  animation: 1ms resizeanim;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.resize-triggers,
+.resize-triggers>div,
+.contract-trigger:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.resize-triggers>div {
+  background: #eee;
+  overflow: auto;
+}
+
+.contract-trigger:before {
+  width: 200%;
+  height: 200%;
+}</style><script type="text/javascript" src="./jeremi_files/embedapi.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
+.MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
+.mjx-chtml[tabindex]:focus, body :focus .mjx-chtml[tabindex] {display: inline-table}
+.mjx-full-width {text-align: center; display: table-cell!important; width: 10000em}
+.mjx-math {display: inline-block; border-collapse: separate; border-spacing: 0}
+.mjx-math * {display: inline-block; -webkit-box-sizing: content-box!important; -moz-box-sizing: content-box!important; box-sizing: content-box!important; text-align: left}
+.mjx-numerator {display: block; text-align: center}
+.mjx-denominator {display: block; text-align: center}
+.MJXc-stacked {height: 0; position: relative}
+.MJXc-stacked > * {position: absolute}
+.MJXc-bevelled > * {display: inline-block}
+.mjx-stack {display: inline-block}
+.mjx-op {display: block}
+.mjx-under {display: table-cell}
+.mjx-over {display: block}
+.mjx-over > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-under > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-stack > .mjx-sup {display: block}
+.mjx-stack > .mjx-sub {display: block}
+.mjx-prestack > .mjx-presup {display: block}
+.mjx-prestack > .mjx-presub {display: block}
+.mjx-delim-h > .mjx-char {display: inline-block}
+.mjx-surd {vertical-align: top}
+.mjx-surd + .mjx-box {display: inline-flex}
+.mjx-mphantom * {visibility: hidden}
+.mjx-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 2px 3px; font-style: normal; font-size: 90%}
+.mjx-annotation-xml {line-height: normal}
+.mjx-menclose > svg {fill: none; stroke: currentColor; overflow: visible}
+.mjx-mtr {display: table-row}
+.mjx-mlabeledtr {display: table-row}
+.mjx-mtd {display: table-cell; text-align: center}
+.mjx-label {display: table-row}
+.mjx-box {display: inline-block}
+.mjx-block {display: block}
+.mjx-span {display: inline}
+.mjx-char {display: block; white-space: pre}
+.mjx-itable {display: inline-table; width: auto}
+.mjx-row {display: table-row}
+.mjx-cell {display: table-cell}
+.mjx-table {display: table; width: 100%}
+.mjx-line {display: block; height: 0}
+.mjx-strut {width: 0; padding-top: 1em}
+.mjx-vsize {width: 0}
+.MJXc-space1 {margin-left: .167em}
+.MJXc-space2 {margin-left: .222em}
+.MJXc-space3 {margin-left: .278em}
+.mjx-chartest {display: block; visibility: hidden; position: absolute; top: 0; line-height: normal; font-size: 500%}
+.mjx-chartest .mjx-char {display: inline}
+.mjx-chartest .mjx-box {padding-top: 1000px}
+.MJXc-processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MJXc-processed {display: none}
+.mjx-test {font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.mjx-test.mjx-test-display {display: table!important}
+.mjx-test.mjx-test-inline {display: inline!important; margin-right: -1px}
+.mjx-test.mjx-test-default {display: block!important; clear: both}
+.mjx-ex-box {display: inline-block!important; position: absolute; overflow: hidden; min-height: 0; max-height: none; padding: 0; border: 0; margin: 0; width: 1px; height: 60ex}
+.mjx-test-inline .mjx-left-box {display: inline-block; width: 0; float: left}
+.mjx-test-inline .mjx-right-box {display: inline-block; width: 0; float: right}
+.mjx-test-display .mjx-right-box {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+#MathJax_CHTML_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.mjx-chtml .mjx-noError {line-height: 1.2; vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+.MJXc-TeX-unknown-R {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: normal}
+.MJXc-TeX-unknown-I {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: normal}
+.MJXc-TeX-unknown-B {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: bold}
+.MJXc-TeX-unknown-BI {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: bold}
+.MJXc-TeX-ams-R {font-family: MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}
+.MJXc-TeX-cal-B {font-family: MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}
+.MJXc-TeX-frak-R {font-family: MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}
+.MJXc-TeX-frak-B {font-family: MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}
+.MJXc-TeX-math-BI {font-family: MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}
+.MJXc-TeX-sans-R {font-family: MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}
+.MJXc-TeX-sans-B {font-family: MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}
+.MJXc-TeX-sans-I {font-family: MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}
+.MJXc-TeX-script-R {font-family: MJXc-TeX-script-R,MJXc-TeX-script-Rw}
+.MJXc-TeX-type-R {font-family: MJXc-TeX-type-R,MJXc-TeX-type-Rw}
+.MJXc-TeX-cal-R {font-family: MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}
+.MJXc-TeX-main-B {font-family: MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}
+.MJXc-TeX-main-I {font-family: MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}
+.MJXc-TeX-main-R {font-family: MJXc-TeX-main-R,MJXc-TeX-main-Rw}
+.MJXc-TeX-math-I {font-family: MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}
+.MJXc-TeX-size1-R {font-family: MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}
+.MJXc-TeX-size2-R {font-family: MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}
+.MJXc-TeX-size3-R {font-family: MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}
+.MJXc-TeX-size4-R {font-family: MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}
+.MJXc-TeX-vec-R {font-family: MJXc-TeX-vec-R,MJXc-TeX-vec-Rw}
+.MJXc-TeX-vec-B {font-family: MJXc-TeX-vec-B,MJXc-TeX-vec-Bx,MJXc-TeX-vec-Bw}
+@font-face {font-family: MJXc-TeX-ams-R; src: local('MathJax_AMS'), local('MathJax_AMS-Regular')}
+@font-face {font-family: MJXc-TeX-ams-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-B; src: local('MathJax_Caligraphic Bold'), local('MathJax_Caligraphic-Bold')}
+@font-face {font-family: MJXc-TeX-cal-Bx; src: local('MathJax_Caligraphic'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-cal-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-R; src: local('MathJax_Fraktur'), local('MathJax_Fraktur-Regular')}
+@font-face {font-family: MJXc-TeX-frak-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-B; src: local('MathJax_Fraktur Bold'), local('MathJax_Fraktur-Bold')}
+@font-face {font-family: MJXc-TeX-frak-Bx; src: local('MathJax_Fraktur'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-frak-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-BI; src: local('MathJax_Math BoldItalic'), local('MathJax_Math-BoldItalic')}
+@font-face {font-family: MJXc-TeX-math-BIx; src: local('MathJax_Math'); font-weight: bold; font-style: italic}
+@font-face {font-family: MJXc-TeX-math-BIw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-R; src: local('MathJax_SansSerif'), local('MathJax_SansSerif-Regular')}
+@font-face {font-family: MJXc-TeX-sans-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-B; src: local('MathJax_SansSerif Bold'), local('MathJax_SansSerif-Bold')}
+@font-face {font-family: MJXc-TeX-sans-Bx; src: local('MathJax_SansSerif'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-sans-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-I; src: local('MathJax_SansSerif Italic'), local('MathJax_SansSerif-Italic')}
+@font-face {font-family: MJXc-TeX-sans-Ix; src: local('MathJax_SansSerif'); font-style: italic}
+@font-face {font-family: MJXc-TeX-sans-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-script-R; src: local('MathJax_Script'), local('MathJax_Script-Regular')}
+@font-face {font-family: MJXc-TeX-script-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-type-R; src: local('MathJax_Typewriter'), local('MathJax_Typewriter-Regular')}
+@font-face {font-family: MJXc-TeX-type-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-R; src: local('MathJax_Caligraphic'), local('MathJax_Caligraphic-Regular')}
+@font-face {font-family: MJXc-TeX-cal-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-B; src: local('MathJax_Main Bold'), local('MathJax_Main-Bold')}
+@font-face {font-family: MJXc-TeX-main-Bx; src: local('MathJax_Main'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-main-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-I; src: local('MathJax_Main Italic'), local('MathJax_Main-Italic')}
+@font-face {font-family: MJXc-TeX-main-Ix; src: local('MathJax_Main'); font-style: italic}
+@font-face {font-family: MJXc-TeX-main-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-R; src: local('MathJax_Main'), local('MathJax_Main-Regular')}
+@font-face {font-family: MJXc-TeX-main-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-I; src: local('MathJax_Math Italic'), local('MathJax_Math-Italic')}
+@font-face {font-family: MJXc-TeX-math-Ix; src: local('MathJax_Math'); font-style: italic}
+@font-face {font-family: MJXc-TeX-math-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size1-R; src: local('MathJax_Size1'), local('MathJax_Size1-Regular')}
+@font-face {font-family: MJXc-TeX-size1-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size2-R; src: local('MathJax_Size2'), local('MathJax_Size2-Regular')}
+@font-face {font-family: MJXc-TeX-size2-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size3-R; src: local('MathJax_Size3'), local('MathJax_Size3-Regular')}
+@font-face {font-family: MJXc-TeX-size3-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
+@font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-vec-R; src: local('MathJax_Vector'), local('MathJax_Vector-Regular')}
+@font-face {font-family: MJXc-TeX-vec-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-vec-B; src: local('MathJax_Vector Bold'), local('MathJax_Vector-Bold')}
+@font-face {font-family: MJXc-TeX-vec-Bx; src: local('MathJax_Vector'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-vec-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf') format('opentype')}
+</style></head>
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+    <div id="dokuwiki__site"><div id="dokuwiki__top" class="site dokuwiki mode_show tpl_dokuwiki loggedIn    ">
+
+        
+<!-- ********** HEADER ********** -->
+<div id="dokuwiki__header"><div class="pad group">
+
+    
+    <div class="headings group">
+        <ul class="a11y skip">
+            <li><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202#dokuwiki__content">przejście do zawartości</a></li>
+        </ul>
+
+        <h1><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=start" accesskey="h" title="[H]"><img src="./jeremi_files/logo.png" width="64" height="64" alt=""> <span>pw20we.cs.put.poznan.pl</span></a></h1>
+            </div>
+
+    <div class="tools group">
+        <!-- USER TOOLS -->
+                    <div id="dokuwiki__usertools">
+                <h3 class="a11y">Narzędzia użytkownika</h3>
+                <ul>
+                    <li class="user">Zalogowany jako: <bdi>s160130</bdi> (<bdi>s160130</bdi>)</li><li class="action profile"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=profile" title="Aktualizuj profil" rel="nofollow"><span>Aktualizuj profil</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2 3h20c1.05 0 2 .95 2 2v14c0 1.05-.95 2-2 2H2c-1.05 0-2-.95-2-2V5c0-1.05.95-2 2-2m12 3v1h8V6h-8m0 2v1h8V8h-8m0 2v1h7v-1h-7m-6 3.91C6 13.91 2 15 2 17v1h12v-1c0-2-4-3.09-6-3.09M8 6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg></a></li><li class="action logout"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=logout&amp;sectok=68bc5b8ccd189ba87f773d2d5ce5cbbc" title="Wyloguj" rel="nofollow"><span>Wyloguj</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 17.25V14h-7v-4h7V6.75L22.25 12 17 17.25M13 2a2 2 0 0 1 2 2v4h-2V4H4v16h9v-4h2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9z"></path></svg></a></li>                </ul>
+            </div>
+        
+        <!-- SITE TOOLS -->
+        <div id="dokuwiki__sitetools">
+            <h3 class="a11y">Narzędzia witryny</h3>
+            <form action="https://pw20we.cs.put.poznan.pl/doku.php?id=start" method="get" role="search" class="search doku_form" id="dw__search" accept-charset="utf-8"><input type="hidden" name="do" value="search"><input type="hidden" name="id" value="pr26:s160202:s160202"><div class="no"><input name="q" type="text" class="edit" title="[F]" accesskey="f" placeholder="Szukaj" autocomplete="on" id="qsearch__in" value=""><button value="1" type="submit" title="Szukaj">Szukaj</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>            <div class="mobileTools">
+                <form action="https://pw20we.cs.put.poznan.pl/doku.php" method="get" accept-charset="utf-8"><div class="no"><input type="hidden" name="id" value="pr26:s160202:s160202"><input type="hidden" name="sectok" value="68bc5b8ccd189ba87f773d2d5ce5cbbc"><select name="do" class="edit quickselect" title="Narzędzia"><option value="">Narzędzia</option><optgroup label="Narzędzia strony"><option value="edit">Edytuj stronę</option><option value="revisions">Poprzednie wersje</option><option value="export_odt">ODT export</option><option value="backlink">Odnośniki</option></optgroup><optgroup label="Narzędzia witryny"><option value="recent">Ostatnie zmiany</option><option value="media">Menadżer multimediów</option><option value="index">Indeks</option></optgroup><optgroup label="Narzędzia użytkownika"><option value="profile">Aktualizuj profil</option><option value="logout">Wyloguj</option></optgroup></select><button type="submit" style="display: none;">&gt;</button></div></form>            </div>
+            <ul>
+                <li class="action recent"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=recent" title="Ostatnie zmiany [r]" rel="nofollow" accesskey="r">Ostatnie zmiany</a></li><li class="action media"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=media&amp;ns=pr26%3As160202" title="Menadżer multimediów" rel="nofollow">Menadżer multimediów</a></li><li class="action index"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=index" title="Indeks [x]" rel="nofollow" accesskey="x">Indeks</a></li>            </ul>
+        </div>
+
+    </div>
+
+    <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                                        <div class="trace"><span class="bchead">Ślad:</span> <span class="bcsep">•</span> <bdi><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:2026" class="breadcrumbs" title="pr:2026">2026</a></bdi> <span class="bcsep">•</span> <span class="curid"><bdi><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202" class="breadcrumbs" title="pr26:s160202:s160202">s160202</a></bdi></span></div>
+                    </div>
+    
+
+
+    <hr class="a11y">
+</div></div><!-- /header -->
+
+        <div class="wrapper group">
+
+            
+            <!-- ********** CONTENT ********** -->
+            <div id="dokuwiki__content"><div class="pad group">
+                
+                <div class="pageId"><span>pr26:s160202:s160202</span></div>
+
+                <div class="page group">
+                                                            <!-- wikipage start -->
+                    <!-- TOC START -->
+<div id="dw__toc" class="dw__toc">
+<h3 class="toggle open" style="cursor: pointer;"><strong><span>−</span></strong>Spis treści</h3>
+<div aria-expanded="true" style="">
+
+<ul class="toc">
+<li class="level1"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202#projektgrafy_calkowite_n_17_k_38">Projekt: grafy całkowite n = 17, k = 38</a></div>
+<ul class="toc">
+<li class="clear">
+<ul class="toc">
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202#openmp">OpenMP</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202#znalezione_nowe_grafy_calkowite">Znalezione nowe grafy całkowite</a></div></li>
+<li class="level3"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202#dokumentacja_kodu">Dokumentacja kodu</a></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202#cuda">CUDA</a></div></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1" id="projektgrafy_calkowite_n_17_k_38">Projekt: grafy całkowite n = 17, k = 38</h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0"> Data </th><th class="col1 leftalign"> Status projektu    </th><th class="col2"> Uwagi </th>
+	</tr>
+	</thead>
+	<tbody><tr class="row1">
+		<td class="col0"> 2026-06-26 </td><td class="col1"> KTZ Znaleziono 3 nowe c-grafy </td><td class="col2"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:gcs17:17_38" class="wikilink1" title="ok:gcs17:17_38" data-wiki-id="ok:gcs17:17_38">17_38</a> </td>
+	</tr>
+</tbody></table></div>
+
+</div>
+<div class="secedit editbutton_section editbutton_1"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1782446573"><input type="hidden" name="summary" value="[Projekt: grafy całkowite n = 17, k = 38] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="projektgrafy_calkowite_n_17_k_38"><input type="hidden" name="codeblockOffset" value="0"><input type="hidden" name="range" value="1-164"><input type="hidden" name="id" value="pr26:s160202:s160202"><button type="submit" title="Projekt: grafy całkowite n = 17, k = 38">Edytuj</button></div></form></div>
+<h3 class="sectionedit3" id="openmp">OpenMP</h3>
+<div class="level3">
+
+<p>
+Wyniki sprawdzenia 46328742 grafów
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_3"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1782446573"><input type="hidden" name="summary" value="[OpenMP] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="openmp"><input type="hidden" name="codeblockOffset" value="0"><input type="hidden" name="range" value="165-218"><input type="hidden" name="id" value="pr26:s160202:s160202"><button type="submit" title="OpenMP">Edytuj</button></div></form></div>
+<h3 class="sectionedit4" id="znalezione_nowe_grafy_calkowite">Znalezione nowe grafy całkowite</h3>
+<div class="level3">
+
+<p>
+w postaci kanonicznej
+</p>
+<pre class="code">P?????????????bnhnxV{D~c
+P?????????????c~h^pN|F^o
+P?????????????M^o~qN{M^k</pre>
+
+</div>
+
+<h5 id="slownik_pojec">Słownik pojęć:</h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0"> Id </th><th class="col1"> PL </th><th class="col2"> EN </th><th class="col3"> Opis/<a href="https://pl.wikipedia.org/wiki/Skr%C3%B3towiec" class="urlextern" title="https://pl.wikipedia.org/wiki/Skr%C3%B3towiec" rel="ugc nofollow">Akronim</a> </th>
+	</tr>
+	</thead>
+	<tbody><tr class="row1">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q496579" class="urlextern" title="https://www.wikidata.org/wiki/Q496579" rel="ugc nofollow">Q496579</a> </td><td class="col1"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=wsp:openmp" class="wikilink1" title="wsp:openmp" data-wiki-id="wsp:openmp">OpenMP</a> </td><td class="col2"> OpenMP </td><td class="col3 leftalign">  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q477690" class="urlextern" title="https://www.wikidata.org/wiki/Q477690" rel="ugc nofollow">Q477690</a> </td><td class="col1"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=wsp:cuda" class="wikilink1" title="wsp:cuda" data-wiki-id="wsp:cuda">cuda</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/CUDA" class="urlextern" title="https://en.wikipedia.org/wiki/CUDA" rel="ugc nofollow">CUDA</a> </td><td class="col3 leftalign">  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q1549489" class="urlextern" title="https://www.wikidata.org/wiki/Q1549489" rel="ugc nofollow">Q1549489</a> </td><td class="col1"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:przyspieszenie" class="wikilink1" title="pr:przyspieszenie" data-wiki-id="pr:przyspieszenie">Przyspieszenie</a> </td><td class="col2"> Speedup </td><td class="col3 leftalign">  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q727490" class="urlextern" title="https://www.wikidata.org/wiki/Q727490" rel="ugc nofollow">Q727490</a> </td><td class="col1"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr:skalowalnosc" class="wikilink1" title="pr:skalowalnosc" data-wiki-id="pr:skalowalnosc">Skalowalność</a> </td><td class="col2"> Scalability </td><td class="col3"> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> </td><td class="col1"> Efektywność zrównoleglenia </td><td class="col2"> Parallel efficiency </td><td class="col3"> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q183484" class="urlextern" title="https://www.wikidata.org/wiki/Q183484" rel="ugc nofollow">Q183484</a> </td><td class="col1"> <a href="https://pl.wikipedia.org/wiki/Procesor_graficzny" class="urlextern" title="https://pl.wikipedia.org/wiki/Procesor_graficzny" rel="ugc nofollow">Procesor graficzny</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" class="urlextern" title="https://en.wikipedia.org/wiki/Graphics_processing_unit" rel="ugc nofollow">Graphics processing unit</a> </td><td class="col3"> GPU </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q339387" class="urlextern" title="https://www.wikidata.org/wiki/Q339387" rel="ugc nofollow">Q339387</a> </td><td class="col1"> <a href="https://pl.wikipedia.org/wiki/SIMD" class="urlextern" title="https://pl.wikipedia.org/wiki/SIMD" rel="ugc nofollow">SIMD</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Single_instruction,_multiple_data" class="urlextern" title="https://en.wikipedia.org/wiki/Single_instruction,_multiple_data" rel="ugc nofollow">SIMD</a> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q838108" class="urlextern" title="https://www.wikidata.org/wiki/Q838108" rel="ugc nofollow">Q838108</a> </td><td class="col1"> <a href="https://pl.wikipedia.org/wiki/Zmienna_ulotna" class="urlextern" title="https://pl.wikipedia.org/wiki/Zmienna_ulotna" rel="ugc nofollow">Zmienna ulotna</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Volatile_(computer_programming)" class="urlextern" title="https://en.wikipedia.org/wiki/Volatile_(computer_programming)" rel="ugc nofollow">Volatile</a> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q513932" class="urlextern" title="https://www.wikidata.org/wiki/Q513932" rel="ugc nofollow">Q513932</a> </td><td class="col1"> <a href="https://pl.wikipedia.org/wiki/Operacja_atomowa" class="urlextern" title="https://pl.wikipedia.org/wiki/Operacja_atomowa" rel="ugc nofollow">Operacja atomowa</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Linearizability" class="urlextern" title="https://en.wikipedia.org/wiki/Linearizability" rel="ugc nofollow">Linearizability</a> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q360812" class="urlextern" title="https://www.wikidata.org/wiki/Q360812" rel="ugc nofollow">Q360812</a> </td><td class="col1 leftalign"> <a href="https://pl.wikipedia.org/wiki/Poprawno%C5%9B%C4%87_ca%C5%82kowita" class="urlextern" title="https://pl.wikipedia.org/wiki/Poprawno%C5%9B%C4%87_ca%C5%82kowita" rel="ugc nofollow">Poprawność całkowita</a>  </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Correctness_(computer_science)" class="urlextern" title="https://en.wikipedia.org/wiki/Correctness_(computer_science)" rel="ugc nofollow">Correctness</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q2006368" class="urlextern" title="https://www.wikidata.org/wiki/Q2006368" rel="ugc nofollow">Q2006368</a> </td><td class="col1"> narzut uruchomieniowy </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Overhead_(computing)" class="urlextern" title="https://en.wikipedia.org/wiki/Overhead_(computing)" rel="ugc nofollow">Overhead</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q1046373" class="urlextern" title="https://www.wikidata.org/wiki/Q1046373" rel="ugc nofollow">Q1046373</a> </td><td class="col1"> <a href="https://pl.wikipedia.org/wiki/Sekcja_krytyczna" class="urlextern" title="https://pl.wikipedia.org/wiki/Sekcja_krytyczna" rel="ugc nofollow">Sekcja krytyczna</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Critical_section" class="urlextern" title="https://en.wikipedia.org/wiki/Critical_section" rel="ugc nofollow">Critical section</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q875051" class="urlextern" title="https://www.wikidata.org/wiki/Q875051" rel="ugc nofollow">Q875051</a> </td><td class="col1"> <a href="https://pl.wikipedia.org/wiki/Bariera_pami%C4%99ci" class="urlextern" title="https://pl.wikipedia.org/wiki/Bariera_pami%C4%99ci" rel="ugc nofollow">Bariera pamięci</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Memory_barrier" class="urlextern" title="https://en.wikipedia.org/wiki/Memory_barrier" rel="ugc nofollow">Memory barrier</a> </td><td class="col3"><a href="https://github.com/torvalds/linux/blob/master/arch/x86/include/asm/barrier.h" class="urlextern" title="https://github.com/torvalds/linux/blob/master/arch/x86/include/asm/barrier.h" rel="ugc nofollow">barrier.h</a>  <a href="https://www.felixcloutier.com/x86/mfence" class="urlextern" title="https://www.felixcloutier.com/x86/mfence" rel="ugc nofollow">mfence</a> </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q2041271" class="urlextern" title="https://www.wikidata.org/wiki/Q2041271" rel="ugc nofollow">Q2041271</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Sequence_point" class="urlextern" title="https://en.wikipedia.org/wiki/Sequence_point" rel="ugc nofollow">Sequence point</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q6815752" class="urlextern" title="https://www.wikidata.org/wiki/Q6815752" rel="ugc nofollow">Q6815752</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Memory_ordering" class="urlextern" title="https://en.wikipedia.org/wiki/Memory_ordering" rel="ugc nofollow">Memory ordering</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"> <a href="https://www.wikidata.org/wiki/Q6815743" class="urlextern" title="https://www.wikidata.org/wiki/Q6815743" rel="ugc nofollow">Q6815743</a>  </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Memory_model_(programming)" class="urlextern" title="https://en.wikipedia.org/wiki/Memory_model_(programming)" rel="ugc nofollow">Memory model</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row17">
+		<td class="col0 leftalign"> <a href="https://www.wikidata.org/wiki/Q2885682" class="urlextern" title="https://www.wikidata.org/wiki/Q2885682" rel="ugc nofollow">Q2885682</a>  </td><td class="col1"> <a href="https://pl.wikipedia.org/wiki/Bariera_(informatyka)" class="urlextern" title="https://pl.wikipedia.org/wiki/Bariera_(informatyka)" rel="ugc nofollow">Bariera</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Barrier_(computer_science)" class="urlextern" title="https://en.wikipedia.org/wiki/Barrier_(computer_science)" rel="ugc nofollow">Barrier</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q1326646" class="urlextern" title="https://www.wikidata.org/wiki/Q1326646" rel="ugc nofollow">Q1326646</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Test-and-set" class="urlextern" title="https://en.wikipedia.org/wiki/Test-and-set" rel="ugc nofollow">Test-and-set</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q127412" class="urlextern" title="https://www.wikidata.org/wiki/Q127412" rel="ugc nofollow">Q127412</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Fetch-and-add" class="urlextern" title="https://en.wikipedia.org/wiki/Fetch-and-add" rel="ugc nofollow">Fetch-and-add</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q5253831" class="urlextern" title="https://www.wikidata.org/wiki/Q5253831" rel="ugc nofollow">Q5253831</a> </td><td class="col1"> <a href="https://pl.wikipedia.org/wiki/Wzorzec_projektowy" class="urlextern" title="https://pl.wikipedia.org/wiki/Wzorzec_projektowy" rel="ugc nofollow">Wzorzec projektowy</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Design_pattern" class="urlextern" title="https://en.wikipedia.org/wiki/Design_pattern" rel="ugc nofollow">Design pattern</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q24702811" class="urlextern" title="https://www.wikidata.org/wiki/Q24702811" rel="ugc nofollow">Q24702811</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Roofline_model" class="urlextern" title="https://en.wikipedia.org/wiki/Roofline_model" rel="ugc nofollow">Roofline model</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row22">
+		<td class="col0 leftalign"> <a href="https://www.wikidata.org/wiki/Q6663276" class="urlextern" title="https://www.wikidata.org/wiki/Q6663276" rel="ugc nofollow">Q6663276</a>  </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Load%E2%80%93store_unit" class="urlextern" title="https://en.wikipedia.org/wiki/Load%E2%80%93store_unit" rel="ugc nofollow">Load–store unit</a> </td><td class="col3"> LSU </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"> </td><td class="col1"> </td><td class="col2"> Unified Virtual Addressing </td><td class="col3"> UVA </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q1025017" class="urlextern" title="https://www.wikidata.org/wiki/Q1025017" rel="ugc nofollow">Q1025017</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Cache_coherence" class="urlextern" title="https://en.wikipedia.org/wiki/Cache_coherence" rel="ugc nofollow">Cache coherence</a> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q72897900" class="urlextern" title="https://www.wikidata.org/wiki/Q72897900" rel="ugc nofollow">Q72897900</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Connectivity_(graph_theory)" class="urlextern" title="https://en.wikipedia.org/wiki/Connectivity_(graph_theory)" rel="ugc nofollow">Connectivity</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q1992074" class="urlextern" title="https://www.wikidata.org/wiki/Q1992074" rel="ugc nofollow">Q1992074</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Bit_array" class="urlextern" title="https://en.wikipedia.org/wiki/Bit_array" rel="ugc nofollow">Bit array</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q1279909" class="urlextern" title="https://www.wikidata.org/wiki/Q1279909" rel="ugc nofollow">Q1279909</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Bit-level_parallelism" class="urlextern" title="https://en.wikipedia.org/wiki/Bit-level_parallelism" rel="ugc nofollow">Bit-level parallelism</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q16622442" class="urlextern" title="https://www.wikidata.org/wiki/Q16622442" rel="ugc nofollow">Q16622442</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Interactive_programming" class="urlextern" title="https://en.wikipedia.org/wiki/Interactive_programming" rel="ugc nofollow">Interactive programming</a> </td><td class="col3"></td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q1671596" class="urlextern" title="https://www.wikidata.org/wiki/Q1671596" rel="ugc nofollow">Q1671596</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Intrinsic_function" class="urlextern" title="https://en.wikipedia.org/wiki/Intrinsic_function" rel="ugc nofollow">Intrinsic function</a> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q15777" class="urlextern" title="https://www.wikidata.org/wiki/Q15777" rel="ugc nofollow">Q15777</a> </td><td class="col1"> <a href="https://pl.wikipedia.org/wiki/C_(j%C4%99zyk_programowania)" class="urlextern" title="https://pl.wikipedia.org/wiki/C_(j%C4%99zyk_programowania)" rel="ugc nofollow">Język C</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/C_(programming_language)" class="urlextern" title="https://en.wikipedia.org/wiki/C_(programming_language)" rel="ugc nofollow">C</a> </td><td class="col3"> <a href="https://pw20we.cs.put.poznan.pl/doku.php?id=ok:jezyk_c" class="wikilink1" title="ok:jezyk_c" data-wiki-id="ok:jezyk_c">jezyk_c</a> </td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q1366130" class="urlextern" title="https://www.wikidata.org/wiki/Q1366130" rel="ugc nofollow">Q1366130</a> </td><td class="col1"> <a href="https://pl.wikipedia.org/wiki/Problem_producenta_i_konsumenta" class="urlextern" title="https://pl.wikipedia.org/wiki/Problem_producenta_i_konsumenta" rel="ugc nofollow">Problem producenta i konsumenta</a> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem" class="urlextern" title="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem" rel="ugc nofollow">Producer–consumer problem</a> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q5159104" class="urlextern" title="https://www.wikidata.org/wiki/Q5159104" rel="ugc nofollow">Q5159104</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Concurrent_data_structure" class="urlextern" title="https://en.wikipedia.org/wiki/Concurrent_data_structure" rel="ugc nofollow">Concurrent data structure</a> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"> <a href="https://www.wikidata.org/wiki/Q4927281" class="urlextern" title="https://www.wikidata.org/wiki/Q4927281" rel="ugc nofollow">Q4927281</a> </td><td class="col1"> </td><td class="col2"> <a href="https://en.wikipedia.org/wiki/Blocking_(computing)" class="urlextern" title="https://en.wikipedia.org/wiki/Blocking_(computing)" rel="ugc nofollow">Blocking</a> </td><td class="col3"> </td>
+	</tr>
+</tbody></table></div>
+
+</div>
+<div class="secedit editbutton_section editbutton_4"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1782446573"><input type="hidden" name="summary" value="[Znalezione nowe grafy całkowite] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="znalezione_nowe_grafy_calkowite"><input type="hidden" name="codeblockOffset" value="0"><input type="hidden" name="range" value="219-5529"><input type="hidden" name="id" value="pr26:s160202:s160202"><button type="submit" title="Znalezione nowe grafy całkowite">Edytuj</button></div></form></div>
+<h3 class="sectionedit6" id="dokumentacja_kodu">Dokumentacja kodu</h3>
+<div class="level3">
+
+<p>
+Dokumentacja wygenerowana za pomocą doxygen jest dostępna na <a href="https://github.com/jeremi2/pr-docs/tree/main/html" class="urlextern" title="https://github.com/jeremi2/pr-docs/tree/main/html" rel="ugc nofollow">https://github.com/jeremi2/pr-docs/tree/main/html</a>
+</p>
+
+<p>
+Parametry uruchomienia programu 
+</p>
+<pre class="code">./integral "geng -c 17 38:38 -g 0/1073741824"
+./integral "geng -c 17 38:38 -g 1/1073741824"</pre>
+
+<p>
+Znalezione grafy całkowite:
+</p>
+<pre class="code">&gt;A geng -cX0x-2147483648d1D16 n=17 e=38 class=0/1073741824
+P?????????????~w^rFyi}sg
+P?????????????~w^rF{M~TG
+P?????????????~w^bf}C~FS
+&gt;Z 1241147 graphs generated in 11.12 sec
+OpenMP threads: 16
+&gt;A geng -cX0x-2147483648d1D16 n=17 e=38 class=1/1073741824
+&gt;Z 45087595 graphs generated in 81.88 sec
+
+liczba grafow calkowitych: 0</pre>
+
+<p>
+Implementacja
+Grafy są generowane programem geng, z użyciem przekazanych argumentów oraz sprawdzane funkcją eigensymmatrix.
+</p>
+
+<p>
+Program jest zrównoleglony  (#pragma omp parallel for)
+</p>
+<pre class="code c"><span class="co2">#define _GNU_SOURCE</span>
+<span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include &lt;stdlib.h&gt;</span>
+<span class="co2">#include &lt;string.h&gt;</span>
+<span class="co2">#include &lt;omp.h&gt;</span>
+<span class="co2">#include &lt;math.h&gt;</span>
+&nbsp;
+&nbsp;
+<span class="co2">#define NMAX 20</span>
+<span class="coMULTI">/*   Funkcja eigensymmatrix jest wzorowana na kodzie w języku Pascal A.Marciniaka */</span>
+<span class="coMULTI">/**
+@brief Testowanie czy graf jest całkowity
+@param BUFOR - łańcuch tekstowy kodujący graf w formacie graph6
+@return 1 lub 0
+*/</span>
+<span class="kw4">int</span> eigensymmatrix<span class="br0">(</span><span class="kw4">char</span> <span class="sy0">*</span> BUFOR<span class="br0">)</span>
+<span class="br0">{</span>
+  <span class="kw4">int</span> i<span class="sy0">,</span>j<span class="sy0">,</span>k<span class="sy0">,</span>k3<span class="sy0">,</span>k4<span class="sy0">,</span>L<span class="sy0">,</span>L1<span class="sy0">,</span>z<span class="sy0">;</span>
+  <span class="kw4">long</span> <span class="kw4">double</span> <span class="coMULTI">/* lambda, */</span> eps<span class="sy0">,</span>g<span class="sy0">,</span>h<span class="sy0">,</span>ma<span class="sy0">,</span>mn<span class="sy0">,</span>norm<span class="sy0">,</span>s<span class="sy0">,</span>t<span class="sy0">,</span>u<span class="sy0">,</span>w<span class="sy0">;</span>
+  <span class="kw4">int</span> cond<span class="sy0">;</span>
+  <span class="kw4">long</span> <span class="kw4">double</span> d<span class="br0">[</span>NMAX<span class="sy0">+</span><span class="nu0">1</span><span class="br0">]</span><span class="sy0">,</span> e<span class="br0">[</span>NMAX<span class="sy0">+</span><span class="nu0">1</span><span class="br0">]</span><span class="sy0">,</span> e2<span class="br0">[</span>NMAX<span class="sy0">+</span><span class="nu0">1</span><span class="br0">]</span><span class="sy0">,</span> Lb<span class="br0">[</span>NMAX<span class="sy0">+</span><span class="nu0">1</span><span class="br0">]</span><span class="sy0">;</span>
+  <span class="kw4">long</span> <span class="kw4">double</span> x<span class="br0">[</span>NMAX<span class="sy0">+</span><span class="nu0">1</span><span class="br0">]</span><span class="sy0">;</span>
+  <span class="kw4">long</span> <span class="kw4">double</span> a<span class="br0">[</span>NMAX<span class="sy0">*</span><span class="br0">(</span>NMAX<span class="sy0">-</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">/</span><span class="nu0">2</span> <span class="sy0">+</span> NMAX <span class="sy0">+</span> <span class="nu0">1</span><span class="br0">]</span><span class="sy0">;</span>
+  <span class="kw4">int</span> n<span class="sy0">;</span>
+  <span class="kw4">int</span> bit<span class="sy0">,</span> poz<span class="sy0">,</span> poz2<span class="sy0">;</span>
+  bit <span class="sy0">=</span> <span class="nu0">32</span><span class="sy0">;</span>
+  poz <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span>
+  poz2 <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span>
+  n <span class="sy0">=</span> BUFOR<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy0">-</span> <span class="nu0">63</span><span class="sy0">;</span>
+  a<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy0">=</span> <span class="nu16">0.0</span><span class="sy0">;</span>
+  <span class="kw1">for</span> <span class="br0">(</span>i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> n<span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span>
+   <span class="kw1">for</span> <span class="br0">(</span>j <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> j<span class="sy0">&lt;=</span>i<span class="sy0">;</span> j<span class="sy0">++</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>i<span class="sy0">==</span>j<span class="br0">)</span> <span class="br0">{</span>a<span class="br0">[</span>poz2<span class="sy0">++</span><span class="br0">]</span> <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> <span class="br0">}</span>
+        <span class="kw1">else</span> <span class="br0">{</span>
+         <span class="kw1">if</span> <span class="br0">(</span>bit <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span> bit <span class="sy0">=</span> <span class="nu0">32</span><span class="sy0">;</span>  poz<span class="sy0">++;</span> <span class="br0">}</span>
+         <span class="kw1">if</span> <span class="br0">(</span><span class="br0">(</span>BUFOR<span class="br0">[</span>poz<span class="br0">]</span> <span class="sy0">-</span> <span class="nu0">63</span><span class="br0">)</span> <span class="sy0">&amp;</span> bit<span class="br0">)</span>
+                <span class="br0">{</span> a<span class="br0">[</span>poz2<span class="sy0">++</span><span class="br0">]</span> <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span> <span class="br0">}</span>
+               <span class="kw1">else</span>
+                <span class="br0">{</span> a<span class="br0">[</span>poz2<span class="sy0">++</span><span class="br0">]</span> <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> <span class="br0">}</span>
+         bit <span class="sy0">=</span> bit <span class="sy0">&gt;&gt;</span> <span class="nu0">1</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+&nbsp;
+  <span class="kw4">int</span> k1 <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span>
+  <span class="kw4">int</span> k2 <span class="sy0">=</span> n<span class="sy0">;</span>
+  <span class="co1">// if ((1&lt;=k1) &amp;&amp; (k1&lt;=k2) &amp;&amp; (k2&lt;=n))</span>
+   <span class="br0">{</span>
+    i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span>L<span class="sy0">=</span><span class="nu0">1</span><span class="sy0">;</span>L<span class="sy0">&lt;=</span>n<span class="sy0">;</span>L<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span> i <span class="sy0">+=</span> L<span class="sy0">;</span> d<span class="br0">[</span>L<span class="br0">]</span> <span class="sy0">=</span> a<span class="br0">[</span>i<span class="br0">]</span><span class="sy0">;</span> <span class="coMULTI">/* printf("%Lf ",a[i]); */</span> <span class="br0">}</span>
+&nbsp;
+    <span class="kw1">for</span> <span class="br0">(</span>L<span class="sy0">=</span>n<span class="sy0">;</span>L<span class="sy0">&gt;=</span><span class="nu0">2</span><span class="sy0">;</span>L<span class="sy0">--</span><span class="br0">)</span>
+     <span class="br0">{</span>
+      i<span class="sy0">--;</span> j <span class="sy0">=</span> i<span class="sy0">;</span> h <span class="sy0">=</span> a<span class="br0">[</span>j<span class="br0">]</span><span class="sy0">;</span> s <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+      <span class="kw1">for</span> <span class="br0">(</span>k<span class="sy0">=</span>L<span class="sy0">-</span><span class="nu0">2</span><span class="sy0">;</span>k<span class="sy0">&gt;=</span><span class="nu0">1</span><span class="sy0">;</span>k<span class="sy0">--</span><span class="br0">)</span> <span class="br0">{</span> i<span class="sy0">--;</span> g <span class="sy0">=</span> a<span class="br0">[</span>i<span class="br0">]</span><span class="sy0">;</span> s <span class="sy0">+=</span> g<span class="sy0">*</span>g<span class="sy0">;</span> <span class="br0">}</span>
+      i<span class="sy0">--;</span>
+      <span class="kw1">if</span> <span class="br0">(</span>s <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span> e<span class="br0">[</span>L<span class="br0">]</span> <span class="sy0">=</span> h<span class="sy0">;</span> e2<span class="br0">[</span>L<span class="br0">]</span> <span class="sy0">=</span> h<span class="sy0">*</span>h<span class="sy0">;</span> a<span class="br0">[</span>j<span class="br0">]</span> <span class="sy0">=</span> <span class="nu16">0.0</span><span class="sy0">;</span> <span class="br0">}</span>
+       <span class="kw1">else</span>
+        <span class="br0">{</span>
+          s <span class="sy0">+=</span> h<span class="sy0">*</span>h<span class="sy0">;</span> e2<span class="br0">[</span>L<span class="br0">]</span> <span class="sy0">=</span> s<span class="sy0">;</span> g <span class="sy0">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/sqrt.html"><span class="kw3">sqrt</span></a><span class="br0">(</span>s<span class="br0">)</span><span class="sy0">;</span> <span class="kw1">if</span> <span class="br0">(</span>h<span class="sy0">&gt;=</span><span class="nu16">0.0</span><span class="br0">)</span> g<span class="sy0">=-</span>g<span class="sy0">;</span>
+          e<span class="br0">[</span>L<span class="br0">]</span> <span class="sy0">=</span> g<span class="sy0">;</span>
+          s <span class="sy0">=</span> <span class="nu16">1.0</span> <span class="sy0">/</span> <span class="br0">(</span>s<span class="sy0">-</span>h<span class="sy0">*</span>g<span class="br0">)</span><span class="sy0">;</span>
+          a<span class="br0">[</span>j<span class="br0">]</span> <span class="sy0">=</span> h <span class="sy0">-</span> g<span class="sy0">;</span> h <span class="sy0">=</span> <span class="nu16">0.0</span><span class="sy0">;</span> L1 <span class="sy0">=</span> L <span class="sy0">-</span> <span class="nu0">1</span><span class="sy0">;</span> k3 <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span>
+          <span class="kw1">for</span> <span class="br0">(</span>j<span class="sy0">=</span><span class="nu0">1</span><span class="sy0">;</span>j<span class="sy0">&lt;=</span>L1<span class="sy0">;</span>j<span class="sy0">++</span><span class="br0">)</span>
+           <span class="br0">{</span>
+             k4 <span class="sy0">=</span> k3<span class="sy0">;</span> g <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+             <span class="kw1">for</span> <span class="br0">(</span>k<span class="sy0">=</span><span class="nu0">1</span><span class="sy0">;</span>k<span class="sy0">&lt;=</span>L1<span class="sy0">;</span>k<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span> g <span class="sy0">+=</span>a<span class="br0">[</span>k4<span class="br0">]</span><span class="sy0">*</span>a<span class="br0">[</span>i<span class="sy0">+</span>k<span class="br0">]</span><span class="sy0">;</span>
+                                   <span class="kw1">if</span> <span class="br0">(</span>k<span class="sy0">&lt;</span>j<span class="br0">)</span>  z <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span> <span class="kw1">else</span> z <span class="sy0">=</span> k<span class="sy0">;</span>
+                                   k4 <span class="sy0">+=</span> z<span class="sy0">;</span> <span class="br0">}</span>
+             k3 <span class="sy0">+=</span> j<span class="sy0">;</span> g <span class="sy0">*=</span> s<span class="sy0">;</span> e<span class="br0">[</span>j<span class="br0">]</span> <span class="sy0">=</span> g<span class="sy0">;</span> h <span class="sy0">+=</span> a<span class="br0">[</span>i<span class="sy0">+</span>j<span class="br0">]</span><span class="sy0">*</span>g<span class="sy0">;</span>
+           <span class="br0">}</span>
+          h <span class="sy0">*=</span> <span class="nu16">0.5</span><span class="sy0">*</span>s<span class="sy0">;</span> k3 <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span>
+          <span class="kw1">for</span> <span class="br0">(</span>j<span class="sy0">=</span><span class="nu0">1</span><span class="sy0">;</span>j<span class="sy0">&lt;=</span>L1<span class="sy0">;</span>j<span class="sy0">++</span><span class="br0">)</span>
+           <span class="br0">{</span>
+             s <span class="sy0">=</span> a<span class="br0">[</span>i<span class="sy0">+</span>j<span class="br0">]</span><span class="sy0">;</span> g <span class="sy0">=</span> e<span class="br0">[</span>j<span class="br0">]</span><span class="sy0">-</span>h<span class="sy0">*</span>s<span class="sy0">;</span> e<span class="br0">[</span>j<span class="br0">]</span> <span class="sy0">=</span> g<span class="sy0">;</span>
+             <span class="kw1">for</span> <span class="br0">(</span>k<span class="sy0">=</span><span class="nu0">1</span><span class="sy0">;</span>k<span class="sy0">&lt;=</span>j<span class="sy0">;</span>k<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span> a<span class="br0">[</span>k3<span class="br0">]</span> <span class="sy0">+=</span> <span class="sy0">-</span>s<span class="sy0">*</span>e<span class="br0">[</span>k<span class="br0">]</span><span class="sy0">-</span>a<span class="br0">[</span>i<span class="sy0">+</span>k<span class="br0">]</span><span class="sy0">*</span>g<span class="sy0">;</span> k3<span class="sy0">++;</span> <span class="br0">}</span>
+           <span class="br0">}</span>
+        <span class="br0">}</span>
+      h <span class="sy0">=</span> d<span class="br0">[</span>L<span class="br0">]</span><span class="sy0">;</span> d<span class="br0">[</span>L<span class="br0">]</span> <span class="sy0">=</span> a<span class="br0">[</span>i<span class="sy0">+</span>L<span class="br0">]</span><span class="sy0">;</span> a<span class="br0">[</span>i<span class="sy0">+</span>L<span class="br0">]</span> <span class="sy0">=</span> h<span class="sy0">;</span>
+     <span class="br0">}</span>
+    h <span class="sy0">=</span> d<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="sy0">;</span> d<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=</span> a<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="sy0">;</span> a<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=</span> h<span class="sy0">;</span> e<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=</span> <span class="nu16">0.0</span><span class="sy0">;</span> e2<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=</span> <span class="nu16">0.0</span><span class="sy0">;</span> s <span class="sy0">=</span> d<span class="br0">[</span>n<span class="br0">]</span><span class="sy0">;</span>
+    t <span class="sy0">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fabs.html"><span class="kw3">fabs</span></a><span class="br0">(</span>e<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span> mn <span class="sy0">=</span> s <span class="sy0">-</span> t<span class="sy0">;</span> ma <span class="sy0">=</span> s <span class="sy0">+</span> t<span class="sy0">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span>i<span class="sy0">=</span>n<span class="sy0">-</span><span class="nu0">1</span><span class="sy0">;</span>i<span class="sy0">&gt;=</span><span class="nu0">1</span><span class="sy0">;</span>i<span class="sy0">--</span><span class="br0">)</span>
+     <span class="br0">{</span>
+      u <span class="sy0">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fabs.html"><span class="kw3">fabs</span></a><span class="br0">(</span>e<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span> h <span class="sy0">=</span> t <span class="sy0">+</span> u<span class="sy0">;</span> t <span class="sy0">=</span> u<span class="sy0">;</span> s <span class="sy0">=</span> d<span class="br0">[</span>i<span class="br0">]</span><span class="sy0">;</span> u <span class="sy0">=</span> s <span class="sy0">-</span> h<span class="sy0">;</span>
+      <span class="kw1">if</span> <span class="br0">(</span>u <span class="sy0">&lt;</span> mn<span class="br0">)</span> mn <span class="sy0">=</span> u<span class="sy0">;</span>
+      u <span class="sy0">=</span> s <span class="sy0">+</span> h<span class="sy0">;</span>
+      <span class="kw1">if</span> <span class="br0">(</span>u <span class="sy0">&gt;</span> ma<span class="br0">)</span> ma <span class="sy0">=</span> u<span class="sy0">;</span>
+     <span class="br0">}</span>
+    <span class="kw1">for</span> <span class="br0">(</span>i<span class="sy0">=</span><span class="nu0">1</span><span class="sy0">;</span>i<span class="sy0">&lt;=</span>n<span class="sy0">;</span>i<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span> Lb<span class="br0">[</span>i<span class="br0">]</span> <span class="sy0">=</span> mn<span class="sy0">;</span> x<span class="br0">[</span>i<span class="br0">]</span> <span class="sy0">=</span> ma<span class="sy0">;</span> <span class="br0">}</span>
+    norm <span class="sy0">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fabs.html"><span class="kw3">fabs</span></a><span class="br0">(</span>mn<span class="br0">)</span><span class="sy0">;</span> s <span class="sy0">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fabs.html"><span class="kw3">fabs</span></a><span class="br0">(</span>ma<span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>s<span class="sy0">&gt;</span>norm<span class="br0">)</span> norm <span class="sy0">=</span> s<span class="sy0">;</span>
+    w <span class="sy0">=</span> ma<span class="sy0">;</span> <span class="coMULTI">/* lambda = norm; */</span> eps <span class="sy0">=</span> <span class="nu19">7.28e-17</span><span class="sy0">*</span>norm<span class="sy0">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span>k<span class="sy0">=</span>k2<span class="sy0">;</span>k<span class="sy0">&gt;=</span>k1<span class="sy0">;</span>k<span class="sy0">--</span><span class="br0">)</span>
+     <span class="br0">{</span>
+      <span class="coMULTI">/* eps = 7.28e-17*norm; */</span> s <span class="sy0">=</span> mn<span class="sy0">;</span> i <span class="sy0">=</span> k<span class="sy0">;</span>
+      <span class="kw1">do</span> <span class="br0">{</span>cond <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> g <span class="sy0">=</span> Lb<span class="br0">[</span>i<span class="br0">]</span><span class="sy0">;</span>
+         <span class="kw1">if</span> <span class="br0">(</span>s <span class="sy0">&lt;</span> g<span class="br0">)</span> s <span class="sy0">=</span> g<span class="sy0">;</span> <span class="kw1">else</span> <span class="br0">{</span> i<span class="sy0">--;</span> <span class="kw1">if</span> <span class="br0">(</span>i<span class="sy0">&gt;=</span>k1<span class="br0">)</span> cond <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span> <span class="br0">}</span>
+      <span class="br0">}</span> <span class="kw1">while</span> <span class="br0">(</span>cond<span class="br0">)</span><span class="sy0">;</span>
+      g <span class="sy0">=</span> x<span class="br0">[</span>k<span class="br0">]</span><span class="sy0">;</span>
+      <span class="kw1">if</span> <span class="br0">(</span>w<span class="sy0">&gt;</span>g<span class="br0">)</span> w <span class="sy0">=</span> g<span class="sy0">;</span>
+      <span class="kw1">while</span> <span class="br0">(</span>w<span class="sy0">-</span>s<span class="sy0">&gt;</span><span class="nu19">2.91e-16</span><span class="sy0">*</span><span class="br0">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/fabs.html"><span class="kw3">fabs</span></a><span class="br0">(</span>s<span class="br0">)</span><span class="sy0">+</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/fabs.html"><span class="kw3">fabs</span></a><span class="br0">(</span>w<span class="br0">)</span><span class="br0">)</span><span class="sy0">+</span>eps<span class="br0">)</span>
+       <span class="br0">{</span>
+         <span class="kw1">if</span> <span class="br0">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/floor.html"><span class="kw3">floor</span></a><span class="br0">(</span>w<span class="sy0">+</span><span class="nu19">10e-5</span><span class="br0">)</span><span class="sy0">&lt;</span>s<span class="sy0">-</span><span class="nu19">10e-5</span><span class="br0">)</span> <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>  <span class="co1">// przedział nie zawiera liczby całkowitej</span>
+         L1 <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> g <span class="sy0">=</span> <span class="nu16">1.0</span><span class="sy0">;</span> t <span class="sy0">=</span> <span class="nu16">0.5</span><span class="sy0">*</span><span class="br0">(</span>s<span class="sy0">+</span>w<span class="br0">)</span><span class="sy0">;</span>
+         <span class="kw1">for</span> <span class="br0">(</span>i<span class="sy0">=</span><span class="nu0">1</span><span class="sy0">;</span>i<span class="sy0">&lt;=</span>n<span class="sy0">;</span>i<span class="sy0">++</span><span class="br0">)</span>
+          <span class="br0">{</span>
+            <span class="kw1">if</span> <span class="br0">(</span>g<span class="sy0">!=</span><span class="nu0">0</span><span class="br0">)</span>  g <span class="sy0">=</span> e2<span class="br0">[</span>i<span class="br0">]</span> <span class="sy0">/</span> g<span class="sy0">;</span> <span class="kw1">else</span> g <span class="sy0">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fabs.html"><span class="kw3">fabs</span></a><span class="br0">(</span><span class="nu19">6.87e15</span><span class="sy0">*</span>e<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span>
+            g <span class="sy0">=</span> d<span class="br0">[</span>i<span class="br0">]</span><span class="sy0">-</span>t<span class="sy0">-</span>g<span class="sy0">;</span>
+            <span class="kw1">if</span> <span class="br0">(</span>g<span class="sy0">&lt;</span><span class="nu0">0</span><span class="br0">)</span> L1<span class="sy0">++;</span>
+          <span class="br0">}</span>
+         <span class="kw1">if</span> <span class="br0">(</span>L1<span class="sy0">&lt;</span>k1<span class="br0">)</span> <span class="br0">{</span> s <span class="sy0">=</span> t<span class="sy0">;</span> Lb<span class="br0">[</span>k1<span class="br0">]</span> <span class="sy0">=</span> s<span class="sy0">;</span> <span class="br0">}</span>
+          <span class="kw1">else</span>
+           <span class="br0">{</span> <span class="kw1">if</span> <span class="br0">(</span>L1<span class="sy0">&lt;</span>k<span class="br0">)</span>
+               <span class="br0">{</span>
+                 s <span class="sy0">=</span> t<span class="sy0">;</span> Lb<span class="br0">[</span>L1<span class="sy0">+</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=</span> s<span class="sy0">;</span>
+                 <span class="kw1">if</span> <span class="br0">(</span>x<span class="br0">[</span>L1<span class="br0">]</span><span class="sy0">&gt;</span>t<span class="br0">)</span> x<span class="br0">[</span>L1<span class="br0">]</span> <span class="sy0">=</span> t<span class="sy0">;</span>
+               <span class="br0">}</span>
+              <span class="kw1">else</span> w <span class="sy0">=</span> t<span class="sy0">;</span>
+           <span class="br0">}</span>
+      <span class="br0">}</span> <span class="co1">// while</span>
+      u <span class="sy0">=</span> <span class="nu16">0.5</span><span class="sy0">*</span><span class="br0">(</span>s<span class="sy0">+</span>w<span class="br0">)</span><span class="sy0">;</span> x<span class="br0">[</span>k<span class="br0">]</span> <span class="sy0">=</span> u<span class="sy0">;</span>
+          <span class="kw1">if</span>  <span class="br0">(</span><span class="sy0">!</span><span class="br0">(</span><span class="br0">(</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/ceil.html"><span class="kw3">ceil</span></a><span class="br0">(</span>u<span class="br0">)</span> <span class="sy0">-</span> u  <span class="sy0">&lt;</span> <span class="nu19">10e-5</span> <span class="br0">)</span> <span class="sy0">||</span> <span class="br0">(</span> u <span class="sy0">-</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/floor.html"><span class="kw3">floor</span></a><span class="br0">(</span>u<span class="br0">)</span> <span class="sy0">&lt;</span> <span class="nu19">10e-5</span> <span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span> <span class="br0">}</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+  <span class="br0">}</span>
+  <span class="kw1">return</span> <span class="nu0">1</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+&nbsp;
+&nbsp;
+<span class="co2">#define BATCH_SIZE 0x1000</span>
+<span class="co2">#define PRINT_GRAPHS 1</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">*</span>argv<span class="br0">[</span><span class="br0">]</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">char</span> <span class="sy0">*</span>cmd <span class="sy0">=</span> <span class="st0">"geng -c 17 38:38 -g"</span><span class="sy0">;</span>
+    FILE <span class="sy0">*</span>fp <span class="sy0">=</span> popen<span class="br0">(</span>cmd<span class="sy0">,</span> <span class="st0">"r"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy0">!</span>fp<span class="br0">)</span> <span class="br0">{</span>
+        <a href="http://www.opengroup.org/onlinepubs/009695399/functions/perror.html"><span class="kw3">perror</span></a><span class="br0">(</span><span class="st0">"error popen geng"</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw1">return</span> <span class="nu0">1</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+&nbsp;
+    <span class="kw4">char</span> <span class="sy0">**</span>batch <span class="sy0">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/malloc.html"><span class="kw3">malloc</span></a><span class="br0">(</span>BATCH_SIZE <span class="sy0">*</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">char</span> <span class="sy0">*</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+&nbsp;
+&nbsp;
+    <span class="kw4">char</span> <span class="sy0">*</span>line <span class="sy0">=</span> NULL<span class="sy0">;</span>
+    <span class="kw4">size_t</span> len <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+    ssize_t nread<span class="sy0">;</span>
+    <span class="kw4">long</span> total_count <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+    <span class="kw4">int</span> idx <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw1">while</span> <span class="br0">(</span><span class="br0">(</span>nread <span class="sy0">=</span> getline<span class="br0">(</span><span class="sy0">&amp;</span>line<span class="sy0">,</span> <span class="sy0">&amp;</span>len<span class="sy0">,</span> fp<span class="br0">)</span><span class="br0">)</span> <span class="sy0">!=</span> <span class="sy0">-</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>nread <span class="sy0">&gt;</span> <span class="nu0">0</span> <span class="sy0">&amp;&amp;</span> line<span class="br0">[</span>nread <span class="sy0">-</span> <span class="nu0">1</span><span class="br0">]</span> <span class="sy0">==</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="br0">)</span>
+            line<span class="br0">[</span>nread <span class="sy0">-</span> <span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=</span> <span class="st0">'<span class="es5">\0</span>'</span><span class="sy0">;</span>
+&nbsp;
+        batch<span class="br0">[</span>idx<span class="br0">]</span> <span class="sy0">=</span> strdup<span class="br0">(</span>line<span class="br0">)</span><span class="sy0">;</span>
+        idx<span class="sy0">++;</span>
+&nbsp;
+        <span class="kw1">if</span> <span class="br0">(</span>idx <span class="sy0">==</span> BATCH_SIZE<span class="br0">)</span> <span class="br0">{</span>
+            <span class="kw4">long</span> batch_count <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+&nbsp;
+            <span class="co2">#pragma omp parallel for reduction(+:batch_count) schedule(dynamic)</span>
+            <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> BATCH_SIZE<span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span>
+                <span class="kw1">if</span> <span class="br0">(</span>eigensymmatrix<span class="br0">(</span>batch<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span> <span class="sy0">==</span> <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+                    batch_count<span class="sy0">++;</span>
+                    <span class="kw1">if</span> <span class="br0">(</span>PRINT_GRAPHS<span class="br0">)</span> <span class="br0">{</span>
+                        <span class="co2">#pragma omp critical</span>
+                        <span class="br0">{</span>
+                            <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">(</span><span class="st0">"%s<span class="es1">\n</span>"</span><span class="sy0">,</span> batch<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span>
+                        <span class="br0">}</span>
+                    <span class="br0">}</span>
+                <span class="br0">}</span>
+            <span class="br0">}</span>
+&nbsp;
+            total_count <span class="sy0">+=</span> batch_count<span class="sy0">;</span>
+&nbsp;
+            <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> idx<span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span>
+                <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span class="kw3">free</span></a><span class="br0">(</span>batch<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span>
+            idx <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">(</span>idx <span class="sy0">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw4">long</span> batch_count <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+&nbsp;
+        <span class="co2">#pragma omp parallel for reduction(+:batch_count) schedule(dynamic)</span>
+        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> idx<span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span>
+            <span class="kw1">if</span> <span class="br0">(</span>eigensymmatrix<span class="br0">(</span>batch<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span> <span class="sy0">==</span> <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+                batch_count<span class="sy0">++;</span>
+                <span class="kw1">if</span> <span class="br0">(</span>PRINT_GRAPHS<span class="br0">)</span> <span class="br0">{</span>
+                    <span class="co2">#pragma omp critical</span>
+                    <span class="br0">{</span>
+                        <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">(</span><span class="st0">"%s<span class="es1">\n</span>"</span><span class="sy0">,</span> batch<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span>
+                    <span class="br0">}</span>
+                <span class="br0">}</span>
+            <span class="br0">}</span>
+        <span class="br0">}</span>
+&nbsp;
+        total_count <span class="sy0">+=</span> batch_count<span class="sy0">;</span>
+&nbsp;
+        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> idx<span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span>
+            <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span class="kw3">free</span></a><span class="br0">(</span>batch<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+&nbsp;
+&nbsp;
+&nbsp;
+    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>liczba grafow calkowitych: %ld<span class="es1">\n</span>"</span><span class="sy0">,</span> total_count<span class="br0">)</span><span class="sy0">;</span>
+&nbsp;
+    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span class="kw3">free</span></a><span class="br0">(</span>batch<span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span class="kw3">free</span></a><span class="br0">(</span>line<span class="br0">)</span><span class="sy0">;</span>
+    pclose<span class="br0">(</span>fp<span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+
+<p>
+Kod programu CUDA
+</p>
+<pre class="code">#include &lt;cuda_runtime.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;math.h&gt;
+
+#define NMAX 20
+
+static void checkCuda(cudaError_t code, const char *file, int line) {
+    if (code != cudaSuccess) {
+        fprintf(stderr, "CUDA error at %s:%d: %s\n", file, line, cudaGetErrorString(code));
+        exit(EXIT_FAILURE);
+    }
+}
+#define CHECK_CUDA(call) checkCuda((call), __FILE__, __LINE__)
+
+__device__ int eigensymmatrix(const char *BUFOR) {
+    int i, j, k, k3, k4, L, L1, z;
+    double eps, g, h, ma, mn, norm, s, t, u, w;
+    int cond;
+    double d[NMAX + 1], e[NMAX + 1], e2[NMAX + 1], Lb[NMAX + 1];
+    double x[NMAX + 1];
+    double a[NMAX * (NMAX - 1) / 2 + NMAX + 1];
+    int n;
+    int bit, poz, poz2;
+
+    bit = 32;
+    poz = 1;
+    poz2 = 1;
+    n = (int)((unsigned char)BUFOR[0]) - 63;
+    a[0] = 0.0;
+    for (i = 0; i &lt; n; i++) {
+        for (j = 0; j &lt;= i; j++) {
+            if (i == j) {
+                a[poz2++] = 0.0;
+            } else {
+                if (bit == 0) {
+                    bit = 32;
+                    poz++;
+                }
+                if ((((int)BUFOR[poz] - 63) &amp; bit) != 0) {
+                    a[poz2++] = 1.0;
+                } else {
+                    a[poz2++] = 0.0;
+                }
+                bit = bit &gt;&gt; 1;
+            }
+        }
+    }
+
+    int k1 = 1;
+    int k2 = n;
+    i = 0;
+    for (L = 1; L &lt;= n; L++) {
+        i += L;
+        d[L] = a[i];
+    }
+
+    for (L = n; L &gt;= 2; L--) {
+        i--;
+        j = i;
+        h = a[j];
+        s = 0.0;
+        for (k = L - 2; k &gt;= 1; k--) {
+            i--;
+            g = a[i];
+            s += g * g;
+        }
+        i--;
+        if (s == 0.0) {
+            e[L] = h;
+            e2[L] = h * h;
+            a[j] = 0.0;
+        } else {
+            s += h * h;
+            e2[L] = s;
+            g = sqrt(s);
+            if (h &gt;= 0.0) g = -g;
+            e[L] = g;
+            s = 1.0 / (s - h * g);
+            a[j] = h - g;
+            h = 0.0;
+            L1 = L - 1;
+            k3 = 1;
+            for (j = 1; j &lt;= L1; j++) {
+                k4 = k3;
+                g = 0.0;
+                for (k = 1; k &lt;= L1; k++) {
+                    g += a[k4] * a[i + k];
+                    if (k &lt; j)
+                        z = 1;
+                    else
+                        z = k;
+                    k4 += z;
+                }
+                g *= s;
+                e[j] = g;
+                h += a[i + j] * g;
+                k3 += j;
+            }
+            h *= 0.5 * s;
+            k3 = 1;
+            for (j = 1; j &lt;= L1; j++) {
+                s = a[i + j];
+                g = e[j] - h * s;
+                e[j] = g;
+                for (k = 1; k &lt;= j; k++) {
+                    a[k3] += -s * e[k] - a[i + k] * g;
+                    k3++;
+                }
+            }
+        }
+        h = d[L];
+        d[L] = a[i + L];
+        a[i + L] = h;
+    }
+
+    h = d[1];
+    d[1] = a[1];
+    a[1] = h;
+    e[1] = 0.0;
+    e2[1] = 0.0;
+    s = d[n];
+    t = fabs(e[n]);
+    mn = s - t;
+    ma = s + t;
+    for (i = n - 1; i &gt;= 1; i--) {
+        u = fabs(e[i]);
+        h = t + u;
+        t = u;
+        s = d[i];
+        u = s - h;
+        if (u &lt; mn) mn = u;
+        u = s + h;
+        if (u &gt; ma) ma = u;
+    }
+    for (i = 1; i &lt;= n; i++) {
+        Lb[i] = mn;
+        x[i] = ma;
+    }
+    norm = fabs(mn);
+    s = fabs(ma);
+    if (s &gt; norm) norm = s;
+    w = ma;
+    eps = 7.28e-17 * norm;
+    for (k = k2; k &gt;= k1; k--) {
+        s = mn;
+        i = k;
+        do {
+            cond = 0;
+            g = Lb[i];
+            if (s &lt; g)
+                s = g;
+            else {
+                i--;
+                if (i &gt;= k1) cond = 1;
+            }
+        } while (cond);
+        g = x[k];
+        if (w &gt; g) w = g;
+        while (w - s &gt; 2.91e-16 * (fabs(s) + fabs(w)) + eps) {
+            if (floor(w + 1e-4) &lt; s - 1e-4) return 0;
+            L1 = 0;
+            g = 1.0;
+            t = 0.5 * (s + w);
+            for (i = 1; i &lt;= k; i++) {
+                if (g != 0.0)
+                    g = e2[i] / g;
+                else
+                    g = fabs(6.87e15 * e[i]);
+                g = d[i] - t - g;
+                if (g &lt; 0.0) L1++;
+            }
+            if (L1 &lt; k1) {
+                s = t;
+                Lb[k1] = s;
+            } else {
+                if (L1 &lt; k) {
+                    s = t;
+                    Lb[L1 + 1] = s;
+                    if (x[L1] &gt; t) x[L1] = t;
+                } else {
+                    w = t;
+                }
+            }
+        }
+        u = 0.5 * (s + w);
+        x[k] = u;
+        if (!((ceil(u) - u &lt; 1e-4) || (u - floor(u) &lt; 1e-4))) return 0;
+    }
+    return 1;
+}
+
+__global__ void evaluate_graph6(const char *lines, int line_len, int num_lines, int *output) {
+    int idx = blockIdx.x * blockDim.x + threadIdx.x;
+    if (idx &gt;= num_lines) return;
+    const char *line = lines + (size_t)idx * line_len;
+    output[idx] = eigensymmatrix(line);
+}
+
+int main(int argc, char **argv) {
+    const char *filename = "/home/kali/omp/projekt/pregenerated_graph6";
+    if (argc &gt;= 2) {
+        filename = argv[1];
+    }
+
+    FILE *fp = fopen(filename, "r");
+    if (!fp) {
+        fprintf(stderr, "Failed to open %s\n", filename);
+        return EXIT_FAILURE;
+    }
+
+    char *line = NULL;
+    size_t len = 0;
+    ssize_t read;
+    size_t num_lines = 0;
+    size_t line_len = 0;
+
+    while ((read = getline(&amp;line, &amp;len, fp)) != -1) {
+        if (read &gt; 0 &amp;&amp; line[read - 1] == '\n') {
+            read--;
+        }
+        if (read == 0) continue;
+        if (line_len == 0) {
+            line_len = read;
+        } else if ((size_t)read != line_len) {
+            fprintf(stderr, "Inconsistent line length: expected %zu got %zd\n", line_len, read);
+            return EXIT_FAILURE;
+        }
+        num_lines++;
+    }
+    if (num_lines == 0) {
+        fprintf(stderr, "No graphs found in %s\n", filename);
+        return EXIT_FAILURE;
+    }
+
+    rewind(fp);
+    char *host_lines = (char *)malloc(num_lines * line_len);
+    if (!host_lines) {
+        fprintf(stderr, "Out of memory allocating host_lines\n");
+        return EXIT_FAILURE;
+    }
+
+    size_t idx = 0;
+    while ((read = getline(&amp;line, &amp;len, fp)) != -1) {
+        if (read &gt; 0 &amp;&amp; line[read - 1] == '\n') {
+            read--;
+        }
+        if (read == 0) continue;
+        memcpy(host_lines + idx * line_len, line, line_len);
+        idx++;
+    }
+    free(line);
+    fclose(fp);
+
+    int *device_results = NULL;
+    char *device_lines = NULL;
+    CHECK_CUDA(cudaMalloc(&amp;device_lines, num_lines * line_len));
+    CHECK_CUDA(cudaMalloc(&amp;device_results, num_lines * sizeof(int)));
+    CHECK_CUDA(cudaMemcpy(device_lines, host_lines, num_lines * line_len, cudaMemcpyHostToDevice));
+
+    int threads_per_block = 256;
+    int blocks = (num_lines + threads_per_block - 1) / threads_per_block;
+
+    printf("Launching kernel for %zu graphs, line_len=%zu, blocks=%d\n", num_lines, line_len, blocks);
+    evaluate_graph6&lt;&lt;&lt;blocks, threads_per_block&gt;&gt;&gt;(device_lines, (int)line_len, (int)num_lines, device_results);
+    CHECK_CUDA(cudaGetLastError());
+    CHECK_CUDA(cudaDeviceSynchronize());
+
+    int *host_results = (int *)malloc(num_lines * sizeof(int));
+    if (!host_results) {
+        fprintf(stderr, "Out of memory allocating host_results\n");
+        return EXIT_FAILURE;
+    }
+    CHECK_CUDA(cudaMemcpy(host_results, device_results, num_lines * sizeof(int), cudaMemcpyDeviceToHost));
+
+    long total = 0;
+    for (size_t i = 0; i &lt; num_lines; i++) {
+        total += host_results[i];
+    }
+
+    printf("Total graphs: %zu, eigensymmatrix==1 count: %ld\n", num_lines, total);
+
+    free(host_lines);
+    free(host_results);
+    CHECK_CUDA(cudaFree(device_lines));
+    CHECK_CUDA(cudaFree(device_results));
+    return EXIT_SUCCESS;
+}
+</pre>
+
+</div>
+
+<h4 id="szybkosc_obliczen_dla_n_watkow">Szybkość obliczeń dla <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.243em; padding-bottom: 0.303em;">n</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-1">n</script> wątków</h4>
+<div class="level4">
+
+<p>
+<a href="https://pw20we.cs.put.poznan.pl/lib/exe/detail.php?id=pr26%3As160202%3As160202&amp;media=pr26:s160202:benchmark_integral.png" class="media" title="pr26:s160202:benchmark_integral.png"><img src="./jeremi_files/fetch.php" class="media" alt="" width="400"></a>
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_6"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1782446573"><input type="hidden" name="summary" value="[Dokumentacja kodu] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="dokumentacja_kodu"><input type="hidden" name="codeblockOffset" value="1"><input type="hidden" name="range" value="5530-19877"><input type="hidden" name="id" value="pr26:s160202:s160202"><button type="submit" title="Dokumentacja kodu">Edytuj</button></div></form></div>
+<h2 class="sectionedit7" id="cuda">CUDA</h2>
+<div class="level2">
+
+<p>
+Aby uniknąć problemów z przepustowością programu geng, program CUDA uruchomiono na pregenerowanym pliku z przygotowanymi grafami w formacie graph6.
+</p>
+
+</div>
+
+<h4 id="uruchamianie_i_wyniki">uruchamianie i wyniki</h4>
+<div class="level4">
+<pre class="code">time ./cuda_integral pregenerated_graph6
+Launching kernel for 1241147 graphs, line_len=24, blocks=4849
+Total graphs: 1241147, eigensymmatrix==1 count: 0
+
+real    0m1.093s
+user    0m0.109s
+sys     0m0.100s</pre>
+
+<p>
+sprawdzenie 1241147 grafów zajęło 1.093s z wykorzystaniem CUDA, w porównaniu do 12.41s z wykorzystaniem 16 wątków OpenMP - <strong>ponad 10-krotne przyspieszenie</strong>.
+</p>
+
+</div>
+
+<h5 id="literatura">Literatura</h5>
+<div class="level5">
+
+<p>
+* <a href="https://en.wikipedia.org/wiki/Integral_graph" class="urlextern" title="https://en.wikipedia.org/wiki/Integral_graph" rel="ugc nofollow">https://en.wikipedia.org/wiki/Integral_graph</a>
+</p>
+
+<p>
+* <a href="https://en.wikipedia.org/wiki/Spectral_graph_theory" class="urlextern" title="https://en.wikipedia.org/wiki/Spectral_graph_theory" rel="ugc nofollow">https://en.wikipedia.org/wiki/Spectral_graph_theory</a>
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_7"><form class="button btn_secedit" method="post" action="https://pw20we.cs.put.poznan.pl/doku.php"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value="1782446573"><input type="hidden" name="summary" value="[CUDA] "><input type="hidden" name="target" value="section"><input type="hidden" name="hid" value="cuda"><input type="hidden" name="codeblockOffset" value="5"><input type="hidden" name="range" value="19878-"><input type="hidden" name="id" value="pr26:s160202:s160202"><button type="submit" title="CUDA">Edytuj</button></div></form></div>
+                    <!-- wikipage stop -->
+                                    </div>
+
+                <div class="docInfo"><bdi>pr26/s160202/s160202.txt</bdi> · ostatnio zmienione: 2026/06/26 04:02 przez <bdi>zwierzak</bdi></div>
+
+                            </div></div><!-- /content -->
+
+            <hr class="a11y">
+
+            <!-- PAGE ACTIONS -->
+            <div id="dokuwiki__pagetools">
+                <h3 class="a11y">Narzędzia strony</h3>
+                <div class="tools">
+                    <ul>
+                        <li class="edit"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=edit" title="Edytuj stronę [e]" rel="nofollow" accesskey="e"><span>Edytuj stronę</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg></a></li><li class="revs"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=revisions" title="Poprzednie wersje [o]" rel="nofollow" accesskey="o"><span>Poprzednie wersje</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 7v5.11l4.71 2.79.79-1.28-4-2.37V7m0-5C8.97 2 5.91 3.92 4.27 6.77L2 4.5V11h6.5L5.75 8.25C6.96 5.73 9.5 4 12.5 4a7.5 7.5 0 0 1 7.5 7.5 7.5 7.5 0 0 1-7.5 7.5c-3.27 0-6.03-2.09-7.06-5h-2.1c1.1 4.03 4.77 7 9.16 7 5.24 0 9.5-4.25 9.5-9.5A9.5 9.5 0 0 0 12.5 2z"></path></svg></a></li><li class="backlink"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=backlink" title="Odnośniki" rel="nofollow"><span>Odnośniki</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42z"></path></svg></a></li><li class="export_odt"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202&amp;do=export_odt" title="ODT export" rel="nofollow"><span>ODT export</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m 18.5,20.5 v -11 l -6,-6 h -7 v 17 M 13,2 20,9 v 11.5 c 0,1 -0.5,1.5 -1.5,1.5 H 5.5 C 4.5,22 4,21.5 4,20.5 V 3.5 C 4,2.5 4.5,2 5.5,2"></path><path d="M 14.5,2.5 C 14,2 14,2 14.5,2 H 19 c 1,0 1,0 1,1 v 4.5 c 0,0.5 0,0.5 -0.5,0"></path></svg></a></li><li class="top"><a href="https://pw20we.cs.put.poznan.pl/doku.php?id=pr26:s160202:s160202#dokuwiki__top" title="Do góry [t]" rel="nofollow" accesskey="t"><span>Do góry</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path></svg></a></li>                    </ul>
+                </div>
+            </div>
+        </div><!-- /wrapper -->
+
+        
+<!-- ********** FOOTER ********** -->
+<div id="dokuwiki__footer"><div class="pad">
+    
+    <div class="buttons">
+                <a href="https://www.dokuwiki.org/donate" title="Donate"><img src="./jeremi_files/button-donate.gif" width="80" height="15" alt="Donate"></a>
+        <a href="https://php.net/" title="Powered by PHP"><img src="./jeremi_files/button-php.gif" width="80" height="15" alt="Powered by PHP"></a>
+        <a href="https://validator.w3.org/check/referer" title="Valid HTML5"><img src="./jeremi_files/button-html5.png" width="80" height="15" alt="Valid HTML5"></a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="./jeremi_files/button-css.png" width="80" height="15" alt="Valid CSS"></a>
+        <a href="https://dokuwiki.org/" title="Driven by DokuWiki"><img src="./jeremi_files/button-dw.png" width="80" height="15" alt="Driven by DokuWiki"></a>
+    </div>
+</div></div><!-- /footer -->
+
+    </div></div><!-- /site -->
+
+    <div class="no"><img src="./jeremi_files/taskrunner.php" width="2" height="1" alt=""></div>
+    <div id="screen__mode" class="no"></div>
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body></html>

@@ -1,0 +1,8 @@
+>A geng -cX0x200d1D7 n=8 e=14 class=1/4
+>Z 484 graphs generated in 0.00 sec
+[sito] done t=0.00209262s graphs=484 survivors=0 rate=231289/s
+>A geng -cX0x12800d1D16 n=17 e=36 class=1/256
+[sito] done t=5.94391s graphs=448714 survivors=0 rate=75491/s
+>A geng -cX0x200d1D7 n=8 e=14 class=1/4
+>Z 484 graphs generated in 0.00 sec
+[sito] done t=0.00132194s graphs=484 survivors=0 rate=366129/s

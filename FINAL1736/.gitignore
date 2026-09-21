@@ -1,0 +1,13 @@
+build/
+build-*/
+*.o
+compile_commands.json
+.cache/
+
+*.graph6
+wynik*.txt
+
+AGENTS.md
+STATE.md
+PLAN.md
+slices/
